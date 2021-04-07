@@ -1,6 +1,7 @@
 import React from 'react';
 import './Nav.css';
 import Logo from '../../IMG/netflix-82871.png';
+import SearchIcon from '@material-ui/icons/Search';
 
 const Navbar = () => {
     return (
@@ -14,7 +15,7 @@ const Navbar = () => {
                 <a href=' ' >My List </a>
 
                 <div className='NavExtra'>
-                    <a href=' ' >? </a>
+                    <a href=' ' ><SearchIcon /></a>
                     <a href=' ' >Kids </a>
                     <a href=' ' >DVD </a>
                     <a href=' ' >? </a>
