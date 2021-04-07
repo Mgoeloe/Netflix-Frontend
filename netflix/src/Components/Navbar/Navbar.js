@@ -1,6 +1,6 @@
 import React from 'react';
-import '../Style/Nav.css';
-import Logo from '../IMG/netflix-82871.png';
+import './Nav.css';
+import Logo from '../../IMG/netflix-82871.png';
 
 const Navbar = () => {
     return (
