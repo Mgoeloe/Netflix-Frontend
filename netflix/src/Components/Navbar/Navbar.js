@@ -7,7 +7,19 @@ const Navbar = () => {
         <div>
             <div className='Navbar' >
                 <img src={Logo} alt='logo' />
-                test
+                <a href=' ' >Home </a>
+                <a href=' ' >TV Shows </a>
+                <a href=' ' >Movies </a>
+                <a href=' ' >News & Popular</a>
+                <a href=' ' >My List </a>
+
+                <div className='NavExtra'>
+                    <a href=' ' >? </a>
+                    <a href=' ' >Kids </a>
+                    <a href=' ' >DVD </a>
+                    <a href=' ' >? </a>
+                    <a href=' ' >? </a>
+                </div>
                 
             </div>
         </div>

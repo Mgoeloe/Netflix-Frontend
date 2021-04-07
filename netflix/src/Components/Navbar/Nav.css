@@ -5,13 +5,40 @@ body {
 
 .Navbar {
   width: 100%;
-  height: 50%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   background-color: #000;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: white;
+  position: fixed;
+  top: 0;
 }
 
 .Navbar img {
   height: 4rem;
   width: auto;
+  margin: 0 2%;
+}
+
+.Navbar a {
+  text-decoration: none;
+  color: white;
+  margin-left: 2%;
+}
+
+.Navbar .NavExtra {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 /*# sourceMappingURL=Nav.css.map */
