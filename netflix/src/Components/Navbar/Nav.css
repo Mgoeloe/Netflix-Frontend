@@ -1,0 +1,17 @@
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.Navbar {
+  width: 100%;
+  height: 50%;
+  background-color: #000;
+  color: white;
+}
+
+.Navbar img {
+  height: 4rem;
+  width: auto;
+}
+/*# sourceMappingURL=Nav.css.map */
