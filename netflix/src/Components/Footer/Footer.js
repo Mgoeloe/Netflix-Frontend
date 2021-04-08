@@ -42,7 +42,7 @@ const changeText = (text) => setButtonText(text);
           <div className="one">
             <ul>
               <li>
-                <a>Audio en ondertiteling</a>
+                <a>Audio en ondertiteling </a>
               </li>
               <li>
                 <a href="https://media.netflix.com/en/" target="_blank" rel='noreferrer'>Media Center</a>
@@ -102,6 +102,8 @@ const changeText = (text) => setButtonText(text);
           <p>© 1997-2021 Netflix, Inc.</p>
         </div>
       </div>
+
+
     </footer>
   );
 };
