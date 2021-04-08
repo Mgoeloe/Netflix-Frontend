@@ -1,8 +1,3 @@
-body {
-  height: 100%;
-  width: 100%;
-}
-
 .Navbar {
   width: 100%;
   height: auto;
@@ -35,6 +30,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   margin-left: auto;
+  padding-right: 2%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -55,4 +51,3 @@ body {
           transform: scale(0.5);
   margin: 0 100 0 100;
 }
-/*# sourceMappingURL=Nav.css.map */
