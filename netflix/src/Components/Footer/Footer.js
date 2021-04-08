@@ -106,4 +106,6 @@ const changeText = (text) => setButtonText(text);
   );
 };
 
+
+
 export default Footer;
