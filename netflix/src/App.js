@@ -6,11 +6,11 @@ const App = () => {
   return (
     <div>
       <Navbar />
-<<<<<<< Updated upstream
-=======
+
+
       
       <Footer />
->>>>>>> Stashed changes
+
     </div>
   )
 }
