@@ -1,5 +1,5 @@
 import React from 'react';
-import './Nav.css';
+import '../../Styles/style.css';
 
 import Logo from '../../IMG/netflix-82871.png';
 import Avatar from '../../IMG/netflix-avatar.png';
