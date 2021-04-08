@@ -29,11 +29,22 @@ body {
     .NavExtra {
         display: flex;
         margin-left: auto;
+        flex-direction: row;
         // padding-left: 40%;
         // justify-content: flex-end;
 
         a {
             margin-left: 1rem;
+        }
+
+        img {
+            height: 20px;
+            width: auto;
+        }
+
+        #Triangle {
+            transform:scale(0.5);
+            margin: 0 100 0 100;
         }
     }
 
