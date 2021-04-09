@@ -3,7 +3,7 @@ import FacebookIcon from '@material-ui/icons/Facebook';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import YouTubeIcon from '@material-ui/icons/YouTube';
-
+import '../../Styles/style.css';
 
 function Footer () {
 
@@ -15,6 +15,7 @@ const changeText = (text) => setButtonText(text);
 
   return (
     <footer>
+    <div className="top-level">
       <div className="footer-wrapper">
         <div className="social-links">
           <li>
@@ -99,10 +100,10 @@ const changeText = (text) => setButtonText(text);
         <div className="bottom-level">
         <button onClick={() => changeText("020-070")}>{buttonText}</button>
 
-          <p>© 1997-2021 Netflix, Inc.</p>
+          <p className='copyright' >© 1997-2021 Netflix, Inc. {'{'}c1c41fb2-5edd-4d64-9144-acff9162a3ad{'}'}</p>
         </div>
       </div>
-
+</div>
 
     </footer>
   );
