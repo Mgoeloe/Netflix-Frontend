@@ -9,7 +9,7 @@ const App = () => {
     <div>
       {/* nav */}
       <Navbar />
-      <Banner />
+      {/* <Banner /> */}
 
 
       
