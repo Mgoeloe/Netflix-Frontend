@@ -1,19 +1,11 @@
 import './App.css';
 import React from 'react';
-import Navbar from './Components/Navbar/Navbar';
-import Footer from './Components/Footer/Footer';
-import Banner from './Components/Banner/Banner';
+import Homepage from './Components/Homepage/Homepage';
 
 const App = () => {
   return (
     <div>
-      {/* nav */}
-      <Navbar />
-      {/* <Banner /> */}
-
-
-      
-      <Footer />
+      <Homepage />
 
     </div>
   )
