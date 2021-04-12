@@ -17,11 +17,11 @@ const Banner = () => {
       <h1>Watch Matrix 4</h1>
       <div className="BtnBannerWrap">
         <button onClick={url}>
-          <PlayArrow />
+          <PlayArrow className="IconBanner" />
           Play
         </button>
         <button onClick={urlInfo} className="BtnInfo">
-          <InfoOutlined />
+          <InfoOutlined className="IconBanner" />
           More info
         </button>
       </div>
