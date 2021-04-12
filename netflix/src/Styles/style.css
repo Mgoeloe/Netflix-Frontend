@@ -11,6 +11,7 @@
           align-items: center;
   color: white;
   position: fixed;
+  z-index: 99;
   top: 0;
 }
 
