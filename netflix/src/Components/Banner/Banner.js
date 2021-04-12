@@ -22,7 +22,7 @@ const Banner = () => {
         </button>
         <button onClick={urlInfo} className="BtnInfo">
           <InfoOutlined className="IconBanner" />
-          More info
+          More info test
         </button>
       </div>
     </div>
