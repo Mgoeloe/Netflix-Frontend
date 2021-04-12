@@ -1,27 +1,32 @@
-// import React from 'react';
+import React, { useState } from "react";
+import matrix from "../../IMG/matrix.jpg";
+import movielogo from "../../IMG/matrixlogo.png";
+import "../../Styles/style.css";
+import PlayArrow from "@material-ui/icons/PlayArrow";
+import InfoOutlined from "@material-ui/icons/InfoOutlined";
 
-// const Banner = () => {
-//     return (
-//         <>
-//         <BannerContainer>
-//         <BannerPicture />
-//             <LogoMovie>Matrix</LogoMovie>
-//             <TextWrapper>
-//                 <HeadingBanner>Matrix 4</HeadingBanner>
-//                 <TextBanner>
-//                     Freedom fighters Neo, Trinity and Morpheus continue to
-//                     lead the revolt against the Machine Army, unleashing their arsenal of
-//                     extraordinary skills and weaponry against the systematic forces of repression
-//                     and exploitation.
-//                 </TextBanner>
-//             </TextWrapper>
-//             <BtnWrap>
-//             <Button><BannerIconP />Play</Button>
-//             <Button><BannerIconI />More Info</Button>
-//             </BtnWrap>
-//             </BannerContainer>            
-//         </>
-//     )
-// }
+const Banner = () => {
+  const [state, setState] = useState(false);
+  let url = "";
+  let urlInfo = "";
 
-// export default Banner;
+  return (
+    <div className="BannerPicture">
+      <img src={matrix} alt="bg" className="BannerBg" />
+      <img src={movielogo} alt="movielogo" className="BannerLogo" />
+      <h1>Watch Matrix 4</h1>
+      <div className="BtnBannerWrap">
+        <button onClick={url}>
+          <PlayArrow className="IconBanner" />
+          Play
+        </button>
+        <button onClick={urlInfo} className="BtnInfo">
+          <InfoOutlined className="IconBanner" />
+          More info
+        </button>
+      </div>
+    </div>
+  );
+};
+
+export default Banner;
