@@ -193,7 +193,6 @@ a {
   text-decoration: none;
 }
 
-<<<<<<< HEAD
 .BannerPicture {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -258,9 +257,5 @@ a {
 
 .BannerPicture .IconBanner {
   margin-right: 10px;
-=======
-body {
-  background-color: #860000;
->>>>>>> 89f498ef323325b0673acaf3b9909b975ea26504
 }
 /*# sourceMappingURL=style.css.map */
