@@ -52,3 +52,53 @@
 
  
 }
+
+.Navbar.Active {
+    width: 100%;
+    height: auto;
+    display: flex;
+    background: black;
+    align-items: center;
+    color: white;
+    position: fixed;
+    
+    top: 0;
+    // padding-top: 33%;
+
+    img {
+        height: 4rem;
+        width: auto;
+        margin: 0 2%;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+        margin-left: 2%;
+    }
+
+    .NavExtra {
+        display: flex;
+        margin-left: auto;
+        padding-right: 2%;
+        flex-direction: row;
+        // padding-left: 40%;
+        // justify-content: flex-end;
+
+        a {
+            margin-left: 1rem;
+        }
+
+        img {
+            height: 20px;
+            width: auto;
+        }
+
+        #Triangle {
+            transform:scale(0.5);
+            margin: 0 100 0 100;
+        }
+    }
+
+ 
+}
