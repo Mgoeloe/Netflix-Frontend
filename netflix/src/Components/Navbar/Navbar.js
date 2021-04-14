@@ -1,6 +1,10 @@
-import React, { useState, useEffect } from "react";
-import "../../Styles/style.css";
-import { NavLink } from "react-router-dom";
+import React, { useState, useEffect } from 'react';
+import '../../Styles/style.css';
+import { NavLink, Switch, Route, BrowserRouter as Router } from 'react-router-dom';
+
+import Moviepage from '../Moviepage/Moviepage';
+import Homepage from '../Homepage/Homepage';
+
 import Logo from "../../IMG/netflix-82871.png";
 import Avatar from "../../IMG/netflix-avatar.png";
 import SearchIcon from "@material-ui/icons/Search";
@@ -17,18 +21,20 @@ const Navbar = () => {
     } else {
       setNavbar(false);
     }
-  };
 
-  window.addEventListener("scroll", changeNavColor);
+    window.addEventListener('scroll', changeNavColor);
 
-  return (
-    <div>
-   
-        <div className={navbar ? "Navbar Active" : "Navbar"}>
-          <img src={Logo} alt="logo" />
-          <NavLink exact to="/">Home</NavLink>
-          <NavLink to="/Moviepage">Movies</NavLink>
-          <div className="NavExtra">
+    return (
+        <div>
+            <div className={navbar ? 'Navbar Active' : 'Navbar'} >
+                <img src={Logo} alt='logo' />
+                <NavLink to='/'>Home</NavLink>
+                {/* <a href=' ' >TV Shows </a> */}
+                <NavLink to='/Moviepage'>Movies</NavLink>
+                {/* <a href=' ' >News & Popular</a> */}
+                {/* <a href=' ' >My List </a> */}
+
+                <div className="NavExtra">
                     <a href=" ">
                         <SearchIcon />
                     </a>
@@ -45,13 +51,11 @@ const Navbar = () => {
                     </a>
                     <a href=" " id="Triangle">
                         {" "} &#9660;
-                    </a> 
-</div>
-
-    
+                    </a>
+                </div>
+              
+            </div>
         </div>
-    
-    </div>
   );
 };
 

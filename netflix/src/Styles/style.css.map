@@ -6,7 +6,8 @@
         "../Components/Navbar/_nav.scss",
         "../Components/Banner/_ban.scss",
         "_mediaq.scss",
-        "_mediaq.scss"
+        "_mediaq.scss",
+        "../Components/Moviepage/_Moviepage.scss"
     ],
     "names": [],
     "file": "style.css"
