@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import '../../Styles/style.css';
-import { Link, Switch, Route, BrowserRouter as Router } from 'react-router-dom';
+import { NavLink, Switch, Route, BrowserRouter as Router } from 'react-router-dom';
 
 import Moviepage from '../Moviepage/Moviepage';
 import Homepage from '../Homepage/Homepage';
@@ -29,26 +29,12 @@ const Navbar = () => {
     return (
         <div>
             <div className={navbar ? 'Navbar Active' : 'Navbar'} >
-                <Router>
-                    <img src={Logo} alt='logo' />
-                    <Link to='/'>Home</Link>
-                    {/* <a href=' ' >Home </a> */}
-                    {/* <a href=' ' >TV Shows </a> */}
-                    <Link to='/Moviepage'>Movies</Link>
-                    {/* <a href=' ' >News & Popular</a> */}
-                    {/* <a href=' ' >My List </a> */}
-
-                    {/* <Switch>
-                        <Route path="/Homepage">
-                            <Homepage />
-                        </Route>
-                        <Route path="/Moviepage">
-                            <Moviepage />
-                        </Route>
-                    </Switch> */}
-
-                </Router>
-
+                <img src={Logo} alt='logo' />
+                <NavLink to='/'>Home</NavLink>
+                {/* <a href=' ' >TV Shows </a> */}
+                <NavLink to='/Moviepage'>Movies</NavLink>
+                {/* <a href=' ' >News & Popular</a> */}
+                {/* <a href=' ' >My List </a> */}
 
                 <div className="NavExtra">
                     <a href=" ">
@@ -69,6 +55,7 @@ const Navbar = () => {
                         {" "} &#9660;
                     </a>
                 </div>
+              
             </div>
         </div>
     );

@@ -1,6 +1,6 @@
 import './App.css';
 import React from 'react';
-import { Link, Switch, Route, BrowserRouter as Router } from 'react-router-dom';
+import { Switch, Route, BrowserRouter as Router } from 'react-router-dom';
 
 
 import Homepage from './Components/Homepage/Homepage';
@@ -9,26 +9,21 @@ import Navbar from './Components/Navbar/Navbar';
 
 const App = () => {
   return (
-    <div>
-      {/* <Homepage /> */}
-      <Router>
-     
-          {/* <img src={Logo} alt='logo' /> */}
+    <Router>
+      <div>
 
-          <Link to='/'>Home</Link>
-
-          <Link to='/Moviepage'>Movies</Link>
-
-          <Navbar />
+        <Navbar />
+        <Switch>
 
           <Route exact path="/" component={Homepage} />
-          <Route exact path="/Moviepage" component={Moviepage} />      
-      </Router>
+          <Route exact path="/Moviepage" component={Moviepage} />
 
+        </Switch>
 
-    </div>
-  )
-}
+      </div>
+    </Router>
+  );
+};
 
 export default App
 
