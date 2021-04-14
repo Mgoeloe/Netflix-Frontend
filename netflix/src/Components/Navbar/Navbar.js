@@ -21,7 +21,7 @@ const Navbar = () => {
     } else {
       setNavbar(false);
     }
-
+  }
     window.addEventListener('scroll', changeNavColor);
 
     return (
@@ -58,5 +58,5 @@ const Navbar = () => {
         </div>
   );
 };
-}
+
 export default Navbar

@@ -19,9 +19,9 @@ const Banner = () => {
       <h1>Watch Matrix 4</h1>
       <p>When a beautiful stranger leads computer hacker Neo to a forbidding underworld, he discovers the shocking truth--the life he knows is the elaborate deception of an evil cyber-intelligence.</p>
       <div className="banner__buttons">
-        <button className="banner__button">
+        <button>
           <PlayArrow className="IconBanner" />Play</button>
-        <button className="banner__button dark">
+        <button className="dark">
           <InfoOutlined className="IconBanner" />More info</button>
       </div>
       </div>
