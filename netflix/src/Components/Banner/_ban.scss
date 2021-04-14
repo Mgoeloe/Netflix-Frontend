@@ -1,53 +1,70 @@
-.BannerPicture {
-  display: flex;
-  .BannerBg {
-    position: relative;
-    top: 0;
-    left: 0;
+@import "../../Styles/mediaq";
+
+.banner {
+  background-size: cover;
+  background-image: url(../IMG/matrix.jpg);
+  background-position: center center;
+  color: white;
+  object-fit: contain;
+  width: auto;
+  height: 90vh;
+  .banner__contents {
+    margin-left: 50px;
+    padding-top: 15%;
     height: auto;
-    width: 100vw;
-    z-index: -99;
-    background-color: red;
+    width: 100%;
+    z-index: 1;
+    img {
+      width: 25%;
+      height: auto;
+    }
+    p {
+      color: white;
+      font-size: 2rem;
+      width: 50%;
+      @include tablet {
+        font-size: 1.2rem;
+        width: 50%;
+      }
+      @include mobile {
+        font-size: 0.8rem;
+        width: 50%;
+      }
+    }
   }
-  .BannerLogo {
-    position: absolute;
-    top: 30%;
-    left: 0;
-    height: 20%;
-    margin-left: 2%;
-  }
-  h1 {
-    position: absolute;
-    margin-left: 3%;
-    top: 55%;
-    left: 0;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  .BtnBannerWrap {
-    position: absolute;
-    display: flex;
-    top: 63%;
-    width: 50%;
-  }
+}
+.banner__buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  width: 50%;
   button {
-    height: 50px;
-    width: 11%;
+    background-color: #ffffff;
+    &:hover {
+      background-color: #ffffff94;
+    }
+  }
+  .banner__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
     border-radius: 5px;
-    background-color: #fff;
     color: black;
-    font-size: 1.5rem;
+    width: 150px;
+    height: 50px;
+    font-size: 1.4rem;
     font-weight: bold;
+    margin: 0 10px 0 0;
   }
-  button:hover {
-    opacity: 0.8;
-  }
-  .BtnInfo {
-    width: 17%;
-    background-color: rgba(190, 185, 185, 0.5);
-    color: white;
+  .dark {
+    width: 200px;
+    background-color: #ffffff55;
+    color: rgb(255, 255, 255);
   }
   .IconBanner {
-    margin-right: 10px;
+    font-size: 2.4rem;
+    margin-right: 5%;
   }
 }
