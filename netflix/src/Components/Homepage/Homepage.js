@@ -7,7 +7,7 @@ import Banner from '../Banner/Banner';
 const Homepage = () => {
     return (
         <div>
-            <Navbar />
+            {/* <Navbar /> */}
             <Banner />
             <Footer />
         </div>
