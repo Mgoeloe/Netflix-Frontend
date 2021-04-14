@@ -108,123 +108,46 @@
   margin: 0 100 0 100;
 }
 
-.top-level {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-size: 13px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  margin: 0 0 14px 0;
-  padding: 0;
-}
-
-ul {
-  list-style-type: disc;
-  -webkit-margin-before: 1em;
-          margin-block-start: 1em;
-  -webkit-margin-after: 1em;
-          margin-block-end: 1em;
-  -webkit-margin-start: 0px;
-          margin-inline-start: 0px;
-  -webkit-margin-end: 0px;
-          margin-inline-end: 0px;
-  -webkit-padding-start: 40px;
-          padding-inline-start: 40px;
-  line-height: 2.0;
-}
-
-.social-links {
-  margin-top: 100%;
-  -webkit-transform: scale(1.4);
-          transform: scale(1.4);
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: flex-start;
-          flex-direction: flex-start;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
-  margin-left: 18%;
-}
-
-button {
-  background-color: black;
-  color: #868e96;
-  border: 1px solid #868e96;
-  width: 90px;
-  height: 30px;
-  outline: none;
-  margin-left: 5%;
-}
-
-button:hover {
-  color: #FFF;
-}
-
-.copyright {
-  margin-left: 4.5%;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-p {
-  font-size: 11px;
-  color: #868e96;
-}
-
-a {
-  font-size: 16px;
-  color: #868e96;
-  text-decoration: none;
-}
-
-.banner {
-  background-size: cover;
-  background-image: url(../IMG/matrix.jpg);
-  background-position: center center;
-  color: white;
+.banner .bg {
+  position: absolute;
   -o-object-fit: contain;
      object-fit: contain;
-  width: auto;
-  height: 90vh;
+  width: 100%;
+  z-index: -1;
 }
 
 .banner .banner__contents {
-  margin-left: 50px;
-  padding-top: 15%;
+  color: white;
+  margin-left: 3%;
+  padding-top: 13%;
   height: auto;
-  width: 100%;
+  width: 70%;
   z-index: 1;
 }
 
 .banner .banner__contents img {
-  width: 25%;
+  width: 40%;
   height: auto;
 }
 
+@media only screen and (max-width: 800px) {
+  .banner .banner__contents h1 {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .banner .banner__contents h1 {
+    font-size: 0.5rem;
+  }
+}
+
 .banner .banner__contents p {
-  color: white;
   font-size: 2rem;
   width: 50%;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (max-width: 800px) {
   .banner .banner__contents p {
     font-size: 1.2rem;
     width: 50%;
@@ -233,12 +156,12 @@ a {
 
 @media only screen and (max-width: 800px) {
   .banner .banner__contents p {
-    font-size: 0.8rem;
+    font-size: 0.3rem;
     width: 50%;
   }
 }
 
-.banner__buttons {
+.banner .banner__buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -251,18 +174,18 @@ a {
           justify-content: flex-start;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  width: 50%;
+  width: 60%;
 }
 
-.banner__buttons button {
+.banner .banner__buttons button {
   background-color: #ffffff;
 }
 
-.banner__buttons button:hover {
+.banner .banner__buttons button:hover {
   background-color: #ffffff94;
 }
 
-.banner__buttons .banner__button {
+.banner .banner__buttons .banner__button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -282,14 +205,26 @@ a {
   margin: 0 10px 0 0;
 }
 
-.banner__buttons .dark {
+@media only screen and (max-width: 800px) {
+  .banner .banner__buttons .banner__button {
+    font-size: 0.5rem;
+  }
+}
+
+.banner .banner__buttons .dark {
   width: 200px;
   background-color: #ffffff55;
   color: white;
 }
 
-.banner__buttons .IconBanner {
+.banner .banner__buttons .IconBanner {
   font-size: 2.4rem;
   margin-right: 5%;
+}
+
+@media only screen and (max-width: 800px) {
+  .banner .banner__buttons .IconBanner {
+    font-size: 1.2rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

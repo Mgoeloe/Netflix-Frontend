@@ -9,24 +9,15 @@ import Navbar from './Components/Navbar/Navbar';
 
 const App = () => {
   return (
+    <Router>
     <div>
-      {/* <Homepage /> */}
-      <Router>
-     
-          {/* <img src={Logo} alt='logo' /> */}
-
-          <Link to='/'>Home</Link>
-
-          <Link to='/Moviepage'>Movies</Link>
-
           <Navbar />
-
-          <Route exact path="/" component={Homepage} />
-          <Route exact path="/Moviepage" component={Moviepage} />      
-      </Router>
-
-
+          <Switch>
+          <Route exact path="/">{Homepage}</Route>
+          <Route path="/Moviepage">{Moviepage}</Route>
+          </Switch>
     </div>
+    </Router>
   )
 }
 

@@ -1,56 +1,34 @@
-import React, { useState, useEffect } from 'react';
-import '../../Styles/style.css';
-import { Link, Switch, Route, BrowserRouter as Router } from 'react-router-dom';
-
-import Moviepage from '../Moviepage/Moviepage';
-import Homepage from '../Homepage/Homepage';
-
+import React, { useState, useEffect } from "react";
+import "../../Styles/style.css";
+import { NavLink } from "react-router-dom";
 import Logo from "../../IMG/netflix-82871.png";
 import Avatar from "../../IMG/netflix-avatar.png";
-
 import SearchIcon from "@material-ui/icons/Search";
 import CardGiftcardIcon from "@material-ui/icons/CardGiftcard";
 import NotificationsIcon from "@material-ui/icons/Notifications";
 
 const Navbar = () => {
-    const [navbar, setNavbar] = useState(false);
+  const [navbar, setNavbar] = useState(false);
 
-    const changeNavColor = () => {
-        console.log(window.scrollY)
-        if (window.scrollY >= 40) {
-            setNavbar(true)
-        } else {
-            setNavbar(false)
-        }
+  const changeNavColor = () => {
+    console.log(window.scrollY);
+    if (window.scrollY >= 40) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
     }
+  };
 
-    window.addEventListener('scroll', changeNavColor);
+  window.addEventListener("scroll", changeNavColor);
 
-    return (
-        <div>
-            <div className={navbar ? 'Navbar Active' : 'Navbar'} >
-                <Router>
-                    <img src={Logo} alt='logo' />
-                    <Link to='/'>Home</Link>
-                    {/* <a href=' ' >Home </a> */}
-                    {/* <a href=' ' >TV Shows </a> */}
-                    <Link to='/Moviepage'>Movies</Link>
-                    {/* <a href=' ' >News & Popular</a> */}
-                    {/* <a href=' ' >My List </a> */}
-
-                    {/* <Switch>
-                        <Route path="/Homepage">
-                            <Homepage />
-                        </Route>
-                        <Route path="/Moviepage">
-                            <Moviepage />
-                        </Route>
-                    </Switch> */}
-
-                </Router>
-
-
-                <div className="NavExtra">
+  return (
+    <div>
+   
+        <div className={navbar ? "Navbar Active" : "Navbar"}>
+          <img src={Logo} alt="logo" />
+          <NavLink exact to="/">Home</NavLink>
+          <NavLink to="/Moviepage">Movies</NavLink>
+          <div className="NavExtra">
                     <a href=" ">
                         <SearchIcon />
                     </a>
@@ -67,11 +45,14 @@ const Navbar = () => {
                     </a>
                     <a href=" " id="Triangle">
                         {" "} &#9660;
-                    </a>
-                </div>
-            </div>
+                    </a> 
+</div>
+
+    
         </div>
-    );
+    
+    </div>
+  );
 };
 
 export default Navbar;
