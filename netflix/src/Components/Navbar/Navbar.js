@@ -7,23 +7,21 @@ import Homepage from '../Homepage/Homepage';
 
 import Logo from "../../IMG/netflix-82871.png";
 import Avatar from "../../IMG/netflix-avatar.png";
-
 import SearchIcon from "@material-ui/icons/Search";
 import CardGiftcardIcon from "@material-ui/icons/CardGiftcard";
 import NotificationsIcon from "@material-ui/icons/Notifications";
 
 const Navbar = () => {
-    const [navbar, setNavbar] = useState(false);
+  const [navbar, setNavbar] = useState(false);
 
-    const changeNavColor = () => {
-        console.log(window.scrollY)
-        if (window.scrollY >= 40) {
-            setNavbar(true)
-        } else {
-            setNavbar(false)
-        }
+  const changeNavColor = () => {
+    console.log(window.scrollY);
+    if (window.scrollY >= 40) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
     }
-
+  }
     window.addEventListener('scroll', changeNavColor);
 
     return (
@@ -58,7 +56,7 @@ const Navbar = () => {
               
             </div>
         </div>
-    );
+  );
 };
 
-export default Navbar;
+export default Navbar
