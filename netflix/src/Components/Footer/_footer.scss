@@ -7,45 +7,24 @@
         align-items: flex-start;
         margin: 0 0 14px 0;
         padding: 0;
-        
-      
-    }
-    
-      
-    ul  {  
-        
+    ul  {        
         list-style-type: disc;
         margin-block-start: 1em;
         margin-block-end: 1em;
         margin-inline-start: 0px;
         margin-inline-end: 0px;
         padding-inline-start: 40px;
-        line-height: 2.0;
-
-           
-        }
-        
-          
-    
-      
-    .social-links { 
-
-        
+        line-height: 2.0;    
+        } 
+    .social-links {   
         margin-top:100%;
         transform:scale(1.4);
         flex-direction: flex-start;
         display: flex;
         justify-content: left;
         margin-left: 18%;
-      
-    }
-
- 
-    
-
-            
+    }        
     button {
-
         background-color: black;
         color: #868e96;
         border: 1px solid #868e96 ;
@@ -53,37 +32,24 @@
         height:30px;
         outline:none;
         margin-left: 5%;
-
-
-       
-
-        
-
-    
     }
       button:hover  {
             color: #FFF
          }
-    .copyright{
-     
+    .copyright{  
      margin-left: 4.5%;
      -webkit-user-select: none;  
      -moz-user-select: none;    
      -ms-user-select: none;      
      user-select: none;
-
     }
-        
-    
-    p{
+  p{
       font-size: 11px;
       color: #868e96;
     }
     a{
-      font-size: 16px;
+      font-size: 14px;
       color: #868e96;
-      text-decoration: none;
-    
-      }
-    
-  
+      text-decoration: none;   
+      }    
+    }
