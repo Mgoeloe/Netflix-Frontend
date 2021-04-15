@@ -16,7 +16,6 @@ const Banner = () => {
       <img src={moviebg} alt="moviebg" className="bg" />
       <div className="banner__contents">
       <img src={movielogo} alt="movielogo" className="BannerLogo" />
-      <h1>Watch Matrix 4</h1>
       <p>When a beautiful stranger leads computer hacker Neo to a forbidding underworld, he discovers the shocking truth--the life he knows is the elaborate deception of an evil cyber-intelligence.</p>
       <div className="banner__buttons">
         <button>
