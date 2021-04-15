@@ -1,0 +1,70 @@
+@import "../../Styles/mediaq";
+
+.banner {
+  background-size: cover;
+  background-image: url(../IMG/matrix.jpg);
+  background-position: center center;
+  color: white;
+  object-fit: contain;
+  width: auto;
+  height: 90vh;
+  .banner__contents {
+    margin-left: 50px;
+    padding-top: 15%;
+    height: auto;
+    width: 100%;
+    z-index: 1;
+    img {
+      width: 25%;
+      height: auto;
+    }
+    p {
+      color: white;
+      font-size: 2rem;
+      width: 50%;
+      @include tablet {
+        font-size: 1.2rem;
+        width: 50%;
+      }
+      @include mobile {
+        font-size: 0.8rem;
+        width: 50%;
+      }
+    }
+  }
+}
+.banner__buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  width: 50%;
+  button {
+    background-color: #ffffff;
+    &:hover {
+      background-color: #ffffff94;
+    }
+  }
+  .banner__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    width: 150px;
+    height: 50px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin: 0 10px 0 0;
+  }
+  .dark {
+    width: 200px;
+    background-color: #ffffff55;
+    color: rgb(255, 255, 255);
+  }
+  .IconBanner {
+    font-size: 2.4rem;
+    margin-right: 5%;
+  }
+}

@@ -1,0 +1,294 @@
+.Navbar {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(0, 0, 0, 0)));
+  background: linear-gradient(black, rgba(0, 0, 0, 0));
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+}
+
+.Navbar img {
+  height: 4rem;
+  width: auto;
+  margin: 0 2%;
+}
+
+.Navbar a {
+  text-decoration: none;
+  color: white;
+  margin-left: 2%;
+}
+
+.Navbar .NavExtra {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  padding-right: 2%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.Navbar .NavExtra a {
+  margin-left: 1rem;
+}
+
+.Navbar .NavExtra img {
+  height: 20px;
+  width: auto;
+}
+
+.Navbar .NavExtra #Triangle {
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+  margin: 0 100 0 100;
+}
+
+.Navbar.Active {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: black;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  position: fixed;
+  top: 0;
+}
+
+.Navbar.Active img {
+  height: 4rem;
+  width: auto;
+  margin: 0 2%;
+}
+
+.Navbar.Active a {
+  text-decoration: none;
+  color: white;
+  margin-left: 2%;
+}
+
+.Navbar.Active .NavExtra {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  padding-right: 2%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.Navbar.Active .NavExtra a {
+  margin-left: 1rem;
+}
+
+.Navbar.Active .NavExtra img {
+  height: 20px;
+  width: auto;
+}
+
+.Navbar.Active .NavExtra #Triangle {
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+  margin: 0 100 0 100;
+}
+
+.top-level {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 13px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 0 0 14px 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: disc;
+  -webkit-margin-before: 1em;
+          margin-block-start: 1em;
+  -webkit-margin-after: 1em;
+          margin-block-end: 1em;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
+  -webkit-padding-start: 40px;
+          padding-inline-start: 40px;
+  line-height: 2.0;
+}
+
+.social-links {
+  margin-top: 100%;
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: flex-start;
+          flex-direction: flex-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  margin-left: 18%;
+}
+
+button {
+  background-color: black;
+  color: #868e96;
+  border: 1px solid #868e96;
+  width: 90px;
+  height: 30px;
+  outline: none;
+  margin-left: 5%;
+}
+
+button:hover {
+  color: #FFF;
+}
+
+.copyright {
+  margin-left: 4.5%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+p {
+  font-size: 11px;
+  color: #868e96;
+}
+
+a {
+  font-size: 16px;
+  color: #868e96;
+  text-decoration: none;
+}
+
+.banner {
+  background-size: cover;
+  background-image: url(../IMG/matrix.jpg);
+  background-position: center center;
+  color: white;
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: auto;
+  height: 90vh;
+}
+
+.banner .banner__contents {
+  margin-left: 50px;
+  padding-top: 15%;
+  height: auto;
+  width: 100%;
+  z-index: 1;
+}
+
+.banner .banner__contents img {
+  width: 25%;
+  height: auto;
+}
+
+.banner .banner__contents p {
+  color: white;
+  font-size: 2rem;
+  width: 50%;
+}
+
+@media only screen and (min-width: 800px) {
+  .banner .banner__contents p {
+    font-size: 1.2rem;
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .banner .banner__contents p {
+    font-size: 0.8rem;
+    width: 50%;
+  }
+}
+
+.banner__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  width: 50%;
+}
+
+.banner__buttons button {
+  background-color: #ffffff;
+}
+
+.banner__buttons button:hover {
+  background-color: #ffffff94;
+}
+
+.banner__buttons .banner__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  border-radius: 5px;
+  color: black;
+  width: 150px;
+  height: 50px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin: 0 10px 0 0;
+}
+
+.banner__buttons .dark {
+  width: 200px;
+  background-color: #ffffff55;
+  color: white;
+}
+
+.banner__buttons .IconBanner {
+  font-size: 2.4rem;
+  margin-right: 5%;
+}
