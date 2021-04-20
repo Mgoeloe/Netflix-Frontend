@@ -3,10 +3,11 @@ import axios from 'axios';
 
 
 const Axios = () => {
-    const apiKey = '43adde1f22cb5d9f3d7d5852fa42e5e6';
-    const apiURL = `https://api.themoviedb.org/3/movie/550?api_key=${apiKey}`;
+    const randomMovie = ~~(1000*Math.random());
 
-    // const randomMovie = ~~(1000*Math.random());
+    const apiKey = '43adde1f22cb5d9f3d7d5852fa42e5e6';
+    const apiURL = `https://api.themoviedb.org/3/movie/${randomMovie}?api_key=${apiKey}`;
+
     const [movieInfo, setMovieInfo] = useState();
     
 
