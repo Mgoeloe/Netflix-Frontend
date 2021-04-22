@@ -112,10 +112,6 @@
   margin: 0 100 0 100;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> ae251bca3a6f3d1cfbf606680889795893aa5913
 .top-level {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -137,32 +133,7 @@
   padding: 0;
 }
 
-<<<<<<< HEAD
-ul {
-  list-style-type: none;
-=======
-.top-level ul {
->>>>>>> ae251bca3a6f3d1cfbf606680889795893aa5913
-  list-style-type: disc;
-  -webkit-margin-before: 1em;
-          margin-block-start: 1em;
-  -webkit-margin-after: 1em;
-          margin-block-end: 1em;
-  -webkit-margin-start: 0px;
-          margin-inline-start: 0px;
-  -webkit-margin-end: 0px;
-          margin-inline-end: 0px;
-  -webkit-padding-start: 40px;
-          padding-inline-start: 40px;
-  line-height: 2.0;
-}
-
-<<<<<<< HEAD
-.social-links {
-=======
 .top-level .social-links {
->>>>>>> ae251bca3a6f3d1cfbf606680889795893aa5913
-  margin-top: 100%;
   -webkit-transform: scale(1.4);
           transform: scale(1.4);
   -webkit-box-orient: vertical;
@@ -178,11 +149,7 @@ ul {
   margin-left: 18%;
 }
 
-<<<<<<< HEAD
-button {
-=======
 .top-level button {
->>>>>>> ae251bca3a6f3d1cfbf606680889795893aa5913
   background-color: black;
   color: #868e96;
   border: 1px solid #868e96;
@@ -192,19 +159,11 @@ button {
   margin-left: 5%;
 }
 
-<<<<<<< HEAD
-button:hover {
-  color: #FFF;
-}
-
-.copyright {
-=======
 .top-level button:hover {
   color: #FFF;
 }
 
 .top-level .copyright {
->>>>>>> ae251bca3a6f3d1cfbf606680889795893aa5913
   margin-left: 4.5%;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -212,44 +171,26 @@ button:hover {
   user-select: none;
 }
 
-<<<<<<< HEAD
-p {
-=======
 .top-level p {
->>>>>>> ae251bca3a6f3d1cfbf606680889795893aa5913
   font-size: 11px;
   color: #868e96;
 }
 
-<<<<<<< HEAD
-a {
-  font-size: 16px;
-=======
 .top-level a {
   font-size: 14px;
->>>>>>> ae251bca3a6f3d1cfbf606680889795893aa5913
   color: #868e96;
   text-decoration: none;
 }
 
 .banner {
-<<<<<<< HEAD
-  background-size: cover;
-  background-image: url(../IMG/matrix.jpg);
-  background-position: center center;
-  color: white;
-=======
-=======
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   overflow: none;
 }
 
->>>>>>> ae251bca3a6f3d1cfbf606680889795893aa5913
 .banner .bg {
   position: absolute;
->>>>>>> 23d50c3ccbe27253a0f76042aca40079531f0abb
   -o-object-fit: contain;
      object-fit: contain;
   width: auto;

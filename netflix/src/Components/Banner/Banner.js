@@ -10,6 +10,7 @@ import SentimentVerySatisfiedTwoToneIcon from '@material-ui/icons/SentimentVeryS
 
 const Banner = () => {
   const [state, setState] = useState(false);
+  const [active, setActive] = useState(false);
   let url = "";
   let urlInfo = "";
 
@@ -23,8 +24,9 @@ const Banner = () => {
           discovers the shocking truth--the life he knows is the elaborate deception of an evil
           cyber-intelligence.
         </p>
+ 
         <div className="banner__buttons">
-          <button>
+          <button  onClick={() => setActive(true)}>
             <PlayArrow className="IconBanner" />
             Play
           </button>
