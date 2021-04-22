@@ -210,7 +210,7 @@
   z-index: -1;
 }
 
-.banner .banner__contents {
+.banner .bg .banner__contents {
   color: white;
   margin-left: 2.5%;
   padding-top: 13%;
@@ -218,24 +218,24 @@
   z-index: 1;
 }
 
-.banner .banner__contents img {
+.banner .bg .banner__contents img {
   width: 40%;
   height: auto;
 }
 
-.banner .banner__contents p {
+.banner .bg .banner__contents p {
   font-size: 1.5vw;
   width: 50%;
 }
 
 @media screen and (min-width: 400px) and (max-width: 830px) {
-  .banner .banner__contents p {
+  .banner .bg .banner__contents p {
     width: 65%;
   }
 }
 
 @media screen and (min-width: 400px) and (max-width: 830px) and (min-width: 400px) and (max-width: 830px) {
-  .banner .banner__contents p {
+  .banner .bg .banner__contents p {
     display: none;
   }
 }
@@ -355,5 +355,18 @@
   font-size: 2.5vw;
   color: white;
   margin-left: 1vw;
+}
+
+.player-wrapper {
+  position: relative;
+  padding-top: 56.25%;
+  /* Player ratio: 100 / (1280 / 720) */
+}
+
+.player-wrapper .react-player {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 /*# sourceMappingURL=style.css.map */
