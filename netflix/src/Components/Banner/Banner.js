@@ -7,7 +7,8 @@ import PlayArrow from "@material-ui/icons/PlayArrow";
 import InfoOutlined from "@material-ui/icons/InfoOutlined";
 import ReplayOutlinedIcon from '@material-ui/icons/ReplayOutlined';
 import SentimentVerySatisfiedTwoToneIcon from '@material-ui/icons/SentimentVerySatisfiedTwoTone';
-import Banner_player from "./Banner_player"
+import Banner_player from "./Banner_player";
+import ReactPlayer from 'react-player';
 
 const Banner = () => {
   const [state, setState] = useState(false);
@@ -16,11 +17,11 @@ const Banner = () => {
 
   return (
     <div className="banner">
-      <img src={moviebg} alt="moviebg" className="bg" />
+      {/* <img src={moviebg} alt="moviebg" className="bg" /> */}
+      <Banner_player />
       <div className="banner__contents">
         <img src={movielogo} alt="movielogo" className="BannerLogo" />
         <p>
-
           When a beautiful stranger leads computer hacker Neo to a forbidding underworld, he
           discovers the shocking truth--the life he knows is the elaborate deception of an evil
           cyber-intelligence.

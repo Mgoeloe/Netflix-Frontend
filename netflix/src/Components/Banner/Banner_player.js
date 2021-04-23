@@ -1,5 +1,5 @@
-import React from 'react'
-import ReactPlayer from 'react-player'
+import React from 'react';
+import ReactPlayer from 'react-player';
 import "../../Styles/style.css";
 
 const Banner_player = () => {
@@ -8,12 +8,13 @@ const Banner_player = () => {
            <ReactPlayer
            url="https://www.youtube.com/watch?v=PkhXLgu-mYM&t=7s"
            className='react-player'
-           playing
+           playing={true}
+           muted
            width='100%'
            height='100%'
            /> 
         </div>
     )
-}
+};
 
 export default Banner_player
