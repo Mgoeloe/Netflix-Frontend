@@ -7,6 +7,7 @@ import Homepage from './Components/Homepage/Homepage';
 import Moviepage from './Components/Moviepage/Moviepage';
 import Navbar from './Components/Navbar/Navbar';
 
+
 const App = () => {
   return (
     <Router>

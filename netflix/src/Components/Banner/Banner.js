@@ -8,7 +8,7 @@ import InfoOutlined from "@material-ui/icons/InfoOutlined";
 import ReplayOutlinedIcon from '@material-ui/icons/ReplayOutlined';
 import SentimentVerySatisfiedTwoToneIcon from '@material-ui/icons/SentimentVerySatisfiedTwoTone';
 import Banner_player from "./Banner_player";
-import ReactPlayer from 'react-player';
+// import ReactPlayer from 'react-player';
 
 const Banner = () => {
   const [state, setState] = useState(false);
