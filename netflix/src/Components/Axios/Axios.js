@@ -13,20 +13,23 @@ const Axios = () => {
     const DISCOVER_REST_API_URL = 'http://localhost:8080/api/movies/discover';
 
 
+    useEffect(() => {
+        const fetchData = (async () => {
+            const response = await axios.get(DISCOVER_REST_API_URL);
+    
+            setMovies(response.data.results);
+    
+            // console.log(response.data.backdrop_path);
+            console.log(movies);
+    
+            // const movieImage = response.data.backdrop_path;
+    
+        })()
 
-    const fetchData = async () => {
-        const response = await axios.get(DISCOVER_REST_API_URL);
 
-        setMovies(response.data.results);
+    }, [])
+    
 
-        // console.log(response.data.backdrop_path);
-        console.log(movies);
-
-        // const movieImage = response.data.backdrop_path;
-
-    }
-
-    fetchData()
 
     return (
         <div>
@@ -42,8 +45,8 @@ const Axios = () => {
                 }
                     // <img src={`https://image.tmdb.org/t/p/w500/${movieInfo.backdrop_path}`} alt='Backdrop' />
                 )} */}
-                {movies.map((movie) => (
-                    <div>
+                {movies.map((movie, index) => (
+                    <div key={index}>
                         <img src={`https://image.tmdb.org/t/p/w500/${movie.backdrop_path}`} />
                     </div>
                 ))}
