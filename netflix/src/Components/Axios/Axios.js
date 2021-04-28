@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
+import "../../Styles/style.css";
+
+
 
 const Axios = () => {
     const randomMovie = ~~(1000 * Math.random());
@@ -21,6 +24,7 @@ const Axios = () => {
     
             // console.log(response.data.backdrop_path);
             console.log(movies);
+            console.log(response.data);
     
             // const movieImage = response.data.backdrop_path;
     
@@ -46,7 +50,7 @@ const Axios = () => {
                     // <img src={`https://image.tmdb.org/t/p/w500/${movieInfo.backdrop_path}`} alt='Backdrop' />
                 )} */}
                 {movies.map((movie, index) => (
-                    <div key={index}>
+                    <div className='movie' key={index}>
                         <img src={`https://image.tmdb.org/t/p/w500/${movie.backdrop_path}`} />
                     </div>
                 ))}
