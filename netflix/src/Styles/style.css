@@ -345,6 +345,35 @@
   margin-left: 1vw;
 }
 
+.movies {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.movies .movie {
+  height: auto;
+  width: 20%;
+  margin-bottom: 5%;
+  margin-right: 5px;
+}
+
+.movies .movie img {
+  height: auto;
+  width: 100%;
+  border-radius: 2px;
+}
+
 .player-wrapper {
   position: relative;
   padding-top: 56.25%;
@@ -359,4 +388,7 @@
   position: absolute;
   top: 0px;
 }
-/*# sourceMappingURL=style.css.map */
+
+.movieInfo p {
+  color: white;
+}
