@@ -28,7 +28,16 @@ const MovieInfo = () => {
 
     return (
         <div className= 'movieInfo'>
-            <p>{}</p>
+            <p>{movieInfo.overview}</p>
+
+            <p>Cast: </p>
+
+            <p>Genres: {movieInfo.tagline}</p>
+
+            {console.log(movieInfo.genres)}
+
+        
+
         </div>
     )
 }

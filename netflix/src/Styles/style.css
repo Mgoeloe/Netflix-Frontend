@@ -404,3 +404,7 @@
   position: absolute;
   top: 0px;
 }
+
+.movieInfo p {
+  color: white;
+}
