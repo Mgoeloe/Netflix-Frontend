@@ -1,24 +1,17 @@
-import React, { useState } from "react";
-import matrix from "../../IMG/matrix.jpg";
+import React from "react";
 import movielogo from "../../IMG/matrixlogo.png";
-import moviebg from "../../IMG/matrix.jpg";
 import "../../Styles/style.css";
 import PlayArrow from "@material-ui/icons/PlayArrow";
 import InfoOutlined from "@material-ui/icons/InfoOutlined";
 import ReplayOutlinedIcon from '@material-ui/icons/ReplayOutlined';
 import SentimentVerySatisfiedTwoToneIcon from '@material-ui/icons/SentimentVerySatisfiedTwoTone';
-import Banner_player from "./Banner_player";
-// import ReactPlayer from 'react-player';
+import BannerPlayer from "./Banner_player";
 
 const Banner = () => {
-  const [state, setState] = useState(false);
-  let url = "";
-  let urlInfo = "";
 
   return (
     <div className="banner">
-      {/* <img src={moviebg} alt="moviebg" className="bg" /> */}
-      <Banner_player />
+      <BannerPlayer />
       <div className="banner__contents">
         <img src={movielogo} alt="movielogo" className="BannerLogo" />
         <p>
