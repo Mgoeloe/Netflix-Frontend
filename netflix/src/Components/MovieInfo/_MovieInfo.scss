@@ -1,6 +1,42 @@
 .movieInfo {
+    background-color:rgb(22, 21, 21);
+}
+.movieInfo_content {
+    position: absolute;
+    top: 22%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    z-index: 50;
+    width: 50%;
+    height: 90%;
+    background-color: rgb(22, 21, 21);
+
     p {
         color: white;
 
     }
 }
+
+
+
+//--movieInfo_player styling
+.movieInfo-player {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    padding-top: 56.25%;
+    background-image: linear-gradient(transparent, rgb(0, 0, 0) 90%);
+    .movieReact-player {
+      z-index: -1;
+      position: absolute;
+      top: 0px;
+   
+
+    }
+}
+.movieInfo-wrapimg {
+  img {
+    width: 100%;
+    height: 50%;
+  }
+  }
