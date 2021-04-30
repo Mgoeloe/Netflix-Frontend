@@ -211,6 +211,8 @@
   padding-top: 13%;
   height: auto;
   z-index: 1;
+  -webkit-transition: opacity 400ms ease 0ms;
+  transition: opacity 400ms ease 0ms;
 }
 
 @media screen and (min-width: 400px) and (max-width: 830px) {
@@ -403,6 +405,18 @@
   z-index: -1;
   position: absolute;
   top: 0px;
+}
+
+.movieInfo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -20%);
+          transform: translate(-50%, -20%);
+  z-index: 15;
+  width: 500px;
+  height: 500px;
+  background-color: red;
 }
 
 .movieInfo p {

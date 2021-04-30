@@ -12,7 +12,7 @@ const Homepage = () => {
             {/* <Navbar /> */}
             <Banner />
             {/* <Banner_player /> */}
-            <MovieInfo />
+            {/* <MovieInfo /> */}
             <Footer />
         </div>
     )
