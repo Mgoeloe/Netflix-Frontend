@@ -1,4 +1,15 @@
 .movieInfo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    // display: flex;
+
+    z-index: 15;
+    width: 500px;
+    height: 500px;
+    background-color: red;
+
     p {
         color: white;
 
