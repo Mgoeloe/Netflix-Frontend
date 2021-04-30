@@ -24,7 +24,7 @@ const MovieInfoPlayer = () => {
   );
 
   return show ? (
-    <div className="movieInfo_player">
+    <div className="movieInfo-player">
            <ReactPlayer
         url="https://www.youtube.com/watch?v=PkhXLgu-mYM&t=7s"
         className="movieReact-player"

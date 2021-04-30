@@ -4,6 +4,7 @@ import "../../Styles/style.css";
 import Axios from '../Axios/Axios';
 import MovieInfoPlayer from './MovieInfo_player';
 
+
 const MovieInfo = () => {
     const [movieInfo, setMovieInfo] = useState(null);
     const movieID = '603';
@@ -32,23 +33,18 @@ const MovieInfo = () => {
           <div className='movieInfo_content'>
           <MovieInfoPlayer />
             {movieInfo && (
-                <div>
+                <div className='info_box'>
+                    <div className='info'>
+                    <p><span className='green'>New</span> 2021</p>
                     <p>{movieInfo.overview}</p>
-
-                    <p>Cast: {movieInfo.title}</p>
-
-                    <p>Genres: {movieInfo.genres[1].name}</p>
-
+                    </div>
+                    <div className='extra'>
+                    <p><span>Cast:</span> {movieInfo.title}</p>
+                    <p><span>Genres:</span> {movieInfo.genres[0].name}, {movieInfo.genres[1].name}</p>
                     {console.log(movieInfo.genres)}
-
-                    {/* <button className="dark" onClick={toggle}>
-                	<InfoOutlined className="IconBanner" />
-                    More info
-                    </button> */}
-
-                </div>
-            )}
-
+                        </div>
+                    </div>
+            )}       
         </div>
       </div>
     )

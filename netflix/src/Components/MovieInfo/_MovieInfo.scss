@@ -1,6 +1,6 @@
 .movieInfo {
     background-color:rgb(22, 21, 21);
-}
+ 
 .movieInfo_content {
     position: absolute;
     top: 22%;
@@ -10,33 +10,53 @@
     width: 50%;
     height: 90%;
     background-color: rgb(22, 21, 21);
-
+    .info_box{
+        display: flex;
+        margin-left: 3%;
+.info{
+    width: 70%;
     p {
+        font-size: 1.5rem;
         color: white;
-
+    span{
+        font-weight: bold;
+        font-size: 1.5rem;
+        &.green{
+        color: green;
     }
-}
+}}}
+    .extra{
+    margin-top: 1%;
+    margin-left: 5%;
+width: 35%;
+color: white;
+font-size: 1.2rem;
+span{
+    color: grey;
+}}
+    }
+
+ 
 
 
 
 //--movieInfo_player styling
 .movieInfo-player {
+    width: auto;
+    height: auto;
     position: relative;
-    height: 0;
-    overflow: hidden;
-    padding-top: 56.25%;
-    background-image: linear-gradient(transparent, rgb(0, 0, 0) 90%);
+    padding-top:  56.25%;
     .movieReact-player {
-      z-index: -1;
       position: absolute;
       top: 0px;
-   
-
     }
 }
 .movieInfo-wrapimg {
   img {
     width: 100%;
     height: 50%;
+    background-image: linear-gradient(transparent, rgb(0, 0, 0) 90%);
   }
   }
+}
+}

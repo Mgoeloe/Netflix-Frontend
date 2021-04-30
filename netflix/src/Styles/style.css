@@ -416,7 +416,7 @@
   background-color: #161515;
 }
 
-.movieInfo_content {
+.movieInfo .movieInfo_content {
   position: absolute;
   top: 22%;
   left: 50%;
@@ -428,27 +428,59 @@
   background-color: #161515;
 }
 
-.movieInfo_content p {
+.movieInfo .movieInfo_content .info_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 3%;
+}
+
+.movieInfo .movieInfo_content .info_box .info {
+  width: 70%;
+}
+
+.movieInfo .movieInfo_content .info_box .info p {
+  font-size: 1.5rem;
   color: white;
 }
 
-.movieInfo-player {
-  position: relative;
-  height: 0;
-  overflow: hidden;
-  padding-top: 56.25%;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(90%, black));
-  background-image: linear-gradient(transparent, black 90%);
+.movieInfo .movieInfo_content .info_box .info p span {
+  font-weight: bold;
+  font-size: 1.5rem;
 }
 
-.movieInfo-player .movieReact-player {
-  z-index: -1;
+.movieInfo .movieInfo_content .info_box .info p span.green {
+  color: green;
+}
+
+.movieInfo .movieInfo_content .info_box .extra {
+  margin-top: 1%;
+  margin-left: 5%;
+  width: 35%;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.movieInfo .movieInfo_content .info_box .extra span {
+  color: grey;
+}
+
+.movieInfo .movieInfo_content .movieInfo-player {
+  width: auto;
+  height: auto;
+  position: relative;
+  padding-top: 56.25%;
+}
+
+.movieInfo .movieInfo_content .movieInfo-player .movieReact-player {
   position: absolute;
   top: 0px;
 }
 
-.movieInfo-wrapimg img {
+.movieInfo .movieInfo_content .movieInfo-wrapimg img {
   width: 100%;
   height: 50%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(90%, black));
+  background-image: linear-gradient(transparent, black 90%);
 }
 /*# sourceMappingURL=style.css.map */
