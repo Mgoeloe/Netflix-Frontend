@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 import "../../Styles/style.css";
 import Axios from '../Axios/Axios';
-import Banner from '../Banner/Banner';
+import MovieInfoPlayer from './MovieInfo_player';
 
 const MovieInfo = () => {
     const [movieInfo, setMovieInfo] = useState(null);
@@ -29,6 +29,8 @@ const MovieInfo = () => {
 
     return (
         <div className='movieInfo'>
+          <div className='movieInfo_content'>
+          <MovieInfoPlayer />
             {movieInfo && (
                 <div>
                     <p>{movieInfo.overview}</p>
@@ -48,7 +50,8 @@ const MovieInfo = () => {
             )}
 
         </div>
+      </div>
     )
 }
 
-export default MovieInfo
+export default MovieInfo;

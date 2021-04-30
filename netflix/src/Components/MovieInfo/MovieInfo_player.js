@@ -2,11 +2,10 @@ import React, { useState, useEffect } from "react";
 import ReactPlayer from "react-player";
 import "../../Styles/style.css";
 import moviebg from "../../IMG/matrix.jpg";
-import { StepConnector } from "@material-ui/core";
 
 const delay = 3;
 
-const BannerPlayer = () => {
+const MovieInfoPlayer = () => {
   const [show, setShow] = useState(false);
 
   useEffect(
@@ -25,10 +24,10 @@ const BannerPlayer = () => {
   );
 
   return show ? (
-    <div className="player-wrapper">
+    <div className="movieInfo_player">
            <ReactPlayer
         url="https://www.youtube.com/watch?v=PkhXLgu-mYM&t=7s"
-        className="react-player"
+        className="movieReact-player"
         autoPlay
         playing={true}
         muted
@@ -37,10 +36,10 @@ const BannerPlayer = () => {
       />
     </div>
   ) : (
-    <div className="player-wrapimg">
+    <div className="movieInfo-wrapimg">
     <img src={moviebg} alt="moviebg" />
  </div>
   );
 };
 
-export default BannerPlayer;
+export default MovieInfoPlayer;
