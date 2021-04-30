@@ -96,6 +96,8 @@ right: 0px;
         font-size: 4vw;
       }
     }
+
+
     .banner__age_bg {
       display: flex;
       align-items: start;
@@ -115,6 +117,19 @@ right: 0px;
       }
     }
   }
+}
+.player-wrapper {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  
+}
+.react-player {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  
 }
 
 //   @import "../../Styles/mediaq";
