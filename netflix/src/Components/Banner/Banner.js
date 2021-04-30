@@ -43,12 +43,14 @@ const Banner = () => {
 
       </div>
       <div className='toggle'>
-        {toggleState ? <div>
-          <MovieInfo />  <button className="dark" onClick={toggle}>
-            <InfoOutlined className="ClosePopup" />
-                          Close
-                          </button>
-        </div> : null}
+        {toggleState ?
+          <div className='Popup'>
+            <MovieInfo />  
+            <button className="dark closePopup" onClick={toggle}>
+              <InfoOutlined className="IconBanner" />
+              Close
+            </button>
+          </div> : null}
       </div>
 
       <div className="banner__extra">
