@@ -1,7 +1,8 @@
 import React, { useState } from "react";
+
 import movielogo from "../../IMG/matrixlogo.png";
 import "../../Styles/style.css";
-import PlayArrow from "@material-ui/icons/PlayArrow";
+import ReactPlayer from "react-player/youtube";
 import InfoOutlined from "@material-ui/icons/InfoOutlined";
 import ReplayOutlinedIcon from '@material-ui/icons/ReplayOutlined';
 import SentimentVerySatisfiedTwoToneIcon from '@material-ui/icons/SentimentVerySatisfiedTwoTone';
@@ -10,25 +11,37 @@ import MovieInfo from '../MovieInfo/MovieInfo';
 
 
 const Banner = () => {
+
   const [toggleState, setToggleState] = useState(null);
 
   const toggle = () => {
     setToggleState(!toggleState);
   }
 
+  const [active, setActive] = useState(false);
+
+
   return (
     <div className="banner">
-      <BannerPlayer />
-      <div className="banner__contents">
-        <img src={movielogo} alt="movielogo" className="BannerLogo" />
-        <p>
-          When a beautiful stranger leads computer hacker Neo to a forbidding underworld, he
-          discovers the shocking truth--the life he knows is the elaborate deception of an evil
-          cyber-intelligence.
+     {active ? (<div className="player-wrapper">
+        <ReactPlayer playing={true} className="react-player" url="https://www.youtube.com/watch?v=PkhXLgu-mYM" width="100%" height="100%" />
+        <button onClick={() => setActive(!active)} className="player__button">
+          x
+            </button>
+      </div>) : (
+        <>
+          <BannerPlayer />
+          <div className="banner__contents">
+            <img src={movielogo} alt="movielogo" className="BannerLogo" />
+            <p>
+              When a beautiful stranger leads computer hacker Neo to a forbidding underworld, he
+              discovers the shocking truth--the life he knows is the elaborate deception of an evil
+              cyber-intelligence.
         </p>
 
+
         <div className="banner__buttons">
-          <button>
+          <button onClick={() => setActive(true)}>
             <PlayArrow className="IconBanner" />
             Play
           </button>
@@ -60,6 +73,14 @@ const Banner = () => {
       </div>
     </div>
   );
+
+           
+
+            
+
+          
 };
 
 export default Banner;
+
+
