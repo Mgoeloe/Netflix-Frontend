@@ -12,12 +12,16 @@ import MovieInfo from '../MovieInfo/MovieInfo';
 
 
 const Banner = () => {
+
   const [toggleState, setToggleState] = useState(null);
   const [active, setActive] = useState(false);
 
   const toggle = () => {
     setToggleState(!toggleState);
   }
+
+  const [active, setActive] = useState(false);
+
 
   return (
     <div className="banner">
@@ -74,6 +78,7 @@ const Banner = () => {
 }
 </div>
   )}
+
 
 export default Banner;
 
