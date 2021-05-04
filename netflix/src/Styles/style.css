@@ -360,6 +360,10 @@
   z-index: 1;
 }
 
+body {
+  background-color: black;
+}
+
 .movies {
   width: 100%;
   display: -webkit-box;
@@ -374,6 +378,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 10%;
 }
 
 .movies .movie {
