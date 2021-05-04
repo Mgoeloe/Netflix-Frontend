@@ -20,8 +20,6 @@ const Banner = () => {
     setToggleState(!toggleState);
   }
 
-  const [active, setActive] = useState(false);
-
 
   return (
     <div className="banner">
