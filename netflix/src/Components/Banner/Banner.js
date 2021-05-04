@@ -7,12 +7,14 @@ import InfoOutlined from "@material-ui/icons/InfoOutlined";
 import ReplayOutlinedIcon from '@material-ui/icons/ReplayOutlined';
 import SentimentVerySatisfiedTwoToneIcon from '@material-ui/icons/SentimentVerySatisfiedTwoTone';
 import BannerPlayer from "./Banner_player";
+import PlayArrow from "@material-ui/icons/PlayArrow";
 import MovieInfo from '../MovieInfo/MovieInfo';
 
 
 const Banner = () => {
 
   const [toggleState, setToggleState] = useState(null);
+  const [active, setActive] = useState(false);
 
   const toggle = () => {
     setToggleState(!toggleState);
@@ -71,15 +73,12 @@ const Banner = () => {
         <div className="banner__age_bg"> <SentimentVerySatisfiedTwoToneIcon className="banner__age_icon" />
         </div>
       </div>
-    </div>
-  );
+      </>
+  )      
+}
+</div>
+  )}
 
-           
-
-            
-
-          
-};
 
 export default Banner;
 

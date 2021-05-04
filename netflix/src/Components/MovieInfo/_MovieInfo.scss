@@ -1,7 +1,7 @@
 .movieInfo {
-    background-color:rgb(22, 21, 21);
- 
-.movieInfo_content {
+  background-color: rgb(22, 21, 21);
+
+  .movieInfo_content {
     position: absolute;
     top: 22%;
     left: 50%;
@@ -10,53 +10,93 @@
     width: 50%;
     height: 90%;
     background-color: rgb(22, 21, 21);
-    .info_box{
-        display: flex;
-        margin-left: 3%;
-.info{
-    width: 70%;
-    p {
-        font-size: 1.5rem;
-        color: white;
-    span{
-        font-weight: bold;
-        font-size: 1.5rem;
-        &.green{
-        color: green;
-    }
-}}}
-    .extra{
-    margin-top: 1%;
-    margin-left: 5%;
-width: 35%;
-color: white;
-font-size: 1.2rem;
-span{
-    color: grey;
-}}
-    }
 
- 
-
-
-
-//--movieInfo_player styling
-.movieInfo-player {
-    width: auto;
-    height: auto;
-    position: relative;
-    padding-top:  56.25%;
-    .movieReact-player {
+    .personal {
       position: absolute;
-      top: 0px;
+      top: 45%;
+      left: 3%;
+      display: flex;
+      max-width: 100%;
+      flex-direction: row;
+      .personal_play {
+        background-color: #ffffff;
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        width: 6vw;
+        padding: 0.25vw 5%;
+        font-size: 0.9vw;
+        font-weight: 600;
+        border: none;
+        border-radius: 5px;
+        margin-right: 1%;
+        white-space: nowrap;
+        box-shadow: 3px 3px 10px rgba(48, 53, 75, 0.205);
+        &:hover {
+            background-color: #ffffff94;
+          }
+        }
+      .personal_button {
+        font-size: 1.5vw;
+        color: white;
+        margin: 0 0.4rem;
+        padding: 0 0.4rem;
+        border: 1px solid white;
+        border-radius: 50%;
+        height: 100%;
+        &:hover {
+            background-color: #36333344;
+          }
     }
 }
-.movieInfo-wrapimg {
-  img {
-    width: 100%;
-    height: 50%;
-    background-image: linear-gradient(transparent, rgb(0, 0, 0) 90%);
+
+    .info_box {
+      display: flex;
+      margin-left: 3%;
+      .info {
+        width: 70%;
+        p {
+          font-size: 1.5rem;
+          color: white;
+          span {
+            font-weight: bold;
+            font-size: 1.5rem;
+            &.green {
+              color: green;
+            }
+          }
+        }
+      }
+      .extra {
+        margin-top: 1%;
+        margin-left: 5%;
+        width: 35%;
+        color: white;
+        font-size: 1.2rem;
+        span {
+          color: grey;
+        }
+      }
+    }
+
+    //--movieInfo_player styling
+    .movieInfo-player {
+      width: auto;
+      height: auto;
+      position: relative;
+      padding-top: 56.25%;
+      .movieReact-player {
+        position: absolute;
+        top: 0px;
+      }
+    }
+    .movieInfo-wrapimg {
+      overflow: hidden;
+      img {
+        width: 134%;
+        height: auto;
+        background-image: linear-gradient(transparent, rgb(0, 0, 0) 90%);
+      }
+    }
   }
-  }
-}
 }
