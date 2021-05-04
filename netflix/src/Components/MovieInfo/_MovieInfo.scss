@@ -50,8 +50,6 @@
     }
 }
 
-    
-
     .info_box {
       display: flex;
       margin-left: 3%;
@@ -87,13 +85,13 @@
       height: auto;
       position: relative;
       padding-top: 56.25%;
-
       .movieReact-player {
         position: absolute;
         top: 0px;
       }
     }
     .movieInfo-wrapimg {
+      overflow: hidden;
       img {
         width: 134%;
         height: auto;

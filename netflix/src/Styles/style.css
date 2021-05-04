@@ -530,6 +530,10 @@
   top: 0px;
 }
 
+.movieInfo .movieInfo_content .movieInfo-wrapimg {
+  overflow: hidden;
+}
+
 .movieInfo .movieInfo_content .movieInfo-wrapimg img {
   width: 134%;
   height: auto;
