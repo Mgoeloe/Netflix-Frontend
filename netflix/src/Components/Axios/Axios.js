@@ -36,19 +36,10 @@ const Axios = () => {
 
 
     return (
-        <div>
-            {/* <p>test</p>
-            <button onClick={fetchData}>fetch</button> */}
+        <div className='movieContainer'>
+           
             <div className='movies' >
-                {/* {movies && movies.map((movie, index) => {
-                    return(
-                        <div className='movie' key={index}>
-                            <img src={movie.results.backdrop_path} alt='Backdrop' />
-                        </ div>
-                    )
-                }
-                    // <img src={`https://image.tmdb.org/t/p/w500/${movieInfo.backdrop_path}`} alt='Backdrop' />
-                )} */}
+               
                 {movies.map((movie, index) => (
                     <div className='movie' key={index}>
                         <img src={`https://image.tmdb.org/t/p/w500/${movie.backdrop_path}`} />
