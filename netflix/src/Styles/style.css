@@ -370,6 +370,11 @@ body {
   margin: auto;
 }
 
+.movieContainer .movies:hover .movie {
+  -webkit-transform: translateX(-25%);
+          transform: translateX(-25%);
+}
+
 .movieContainer .movies {
   width: 100%;
   display: -webkit-box;
@@ -385,6 +390,16 @@ body {
   margin-top: 10%;
   overflow: hidden;
   overflow-x: scroll;
+}
+
+.movieContainer .movies .movie:hover {
+  -webkit-transform: scale(1.5) !important;
+          transform: scale(1.5) !important;
+}
+
+.movieContainer .movies .movie:hover ~ .movie {
+  -webkit-transform: translateX(25%);
+          transform: translateX(25%);
 }
 
 .movieContainer .movies .movie img {

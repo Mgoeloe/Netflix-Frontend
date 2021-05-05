@@ -7,6 +7,10 @@ body{
     height: 100%;
     margin: auto;
 
+    .movies:hover .movie {
+        transform: translateX(-25%);
+     }
+
     .movies {
         width: 100%;
         display: flex;
@@ -18,7 +22,13 @@ body{
         overflow-x: scroll;
         
 
+        .movie:hover {
+            transform: scale(1.5) !important;
+        }
 
+        .movie:hover ~ .movie {
+            transform: translateX(25%);
+        }
 
         .movie {
          
