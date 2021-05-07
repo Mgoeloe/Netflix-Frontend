@@ -21,23 +21,24 @@ body{
         margin-top: 10%;
         overflow: hidden;
         overflow-x: scroll;
+        scrollbar-color: black;
         
 
         .movie:hover {
             transform: scale(1.5) !important;
-            transition: transform 300ms ease 100ms;
+            transition: transform 300ms ease 200ms;
         }
 
         .movie:hover ~ .movie {
             transform: translateX(25%);
-            transition: transform 300ms ease 100ms;
+            transition: transform 300ms ease 200ms;
         }
 
         .movie {
          
             img {
                 height: auto;
-                width: 35vw;
+                width: 16vw;
                 border-radius: 2px;
                 margin: 5px;
                 // transform:scale(0.4);
