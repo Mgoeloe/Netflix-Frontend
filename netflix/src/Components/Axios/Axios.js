@@ -5,7 +5,7 @@ import "../../Styles/style.css";
 
 
 
-const Axios = ({genre}) => {
+const Axios = ({genre, title}) => {
     const randomMovie = ~~(1000 * Math.random());
 
     // const apiKey = '43adde1f22cb5d9f3d7d5852fa42e5e6';
@@ -13,7 +13,7 @@ const Axios = ({genre}) => {
 
     const [movies, setMovies] = useState([]);
 
-    const DISCOVER_REST_API_URL = `http://localhost:8080/api/movies/discover/${genre}`;
+    const DISCOVER_REST_API_URL = `http://localhost:8080/api/movies/${genre}`;
 
 
     useEffect(() => {
@@ -37,7 +37,7 @@ const Axios = ({genre}) => {
 
     return (
         <div className='movieContainer'>
-           
+           <h3>{title}</h3>
             <div className='movies' >
                
                 {movies.map((movie, index) => (

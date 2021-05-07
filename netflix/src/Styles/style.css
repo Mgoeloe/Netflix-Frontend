@@ -370,6 +370,11 @@ body {
   margin: auto;
 }
 
+.movieContainer h3 {
+  color: white;
+  margin: 0;
+}
+
 .movieContainer .movies:hover .movie {
   -webkit-transform: translateX(-25%);
           transform: translateX(-25%);
@@ -394,7 +399,11 @@ body {
   margin-top: 10%;
   overflow: hidden;
   overflow-x: scroll;
-  scrollbar-color: black;
+}
+
+.movieContainer .movies::-webkit-scrollbar {
+  display: none;
+  /* for Chrome, Safari, and Opera */
 }
 
 .movieContainer .movies .movie:hover {

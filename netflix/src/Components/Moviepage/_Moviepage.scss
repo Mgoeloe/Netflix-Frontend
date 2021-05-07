@@ -1,11 +1,16 @@
 body{
     background-color: black;
+    
 }
 
 .movieContainer {
     width: 90%;
     height: 100%;
     margin: auto;
+    h3 {
+        color: white;
+        margin: 0;
+    }
 
     .movies:hover .movie {
         transform: translateX(-25%);
@@ -21,7 +26,10 @@ body{
         margin-top: 10%;
         overflow: hidden;
         overflow-x: scroll;
-        scrollbar-color: black;
+        &::-webkit-scrollbar {
+            display: none; /* for Chrome, Safari, and Opera */
+        }
+        
         
 
         .movie:hover {
