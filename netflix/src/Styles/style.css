@@ -368,9 +368,10 @@ body {
   width: 90%;
   height: 100%;
   margin: auto;
+  margin-top: 4%;
 }
 
-.movieContainer h3 {
+.movieContainer h2 {
   color: white;
   margin: 0;
 }
@@ -396,7 +397,6 @@ body {
   -webkit-box-pack: center space-around;
       -ms-flex-pack: center space-around;
           justify-content: center space-around;
-  margin-top: 10%;
   overflow: hidden;
   overflow-x: scroll;
 }
@@ -579,3 +579,4 @@ body {
   background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(90%, black));
   background-image: linear-gradient(transparent, black 90%);
 }
+/*# sourceMappingURL=style.css.map */

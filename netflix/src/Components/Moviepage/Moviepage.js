@@ -5,7 +5,7 @@ import Axios from '../Axios/Axios';
 
 const Moviepage = () => {
     return (
-        <div>
+        <div className="MovieDiv">
             <Axios genre='genre/35' title='Comedy'/>
             <Axios genre='genre/28' title='Action'/>
             <Axios genre='genre/53' title='Thriller'/>
