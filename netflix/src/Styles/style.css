@@ -370,6 +370,11 @@ body {
   margin: auto;
 }
 
+.movieContainer h3 {
+  color: white;
+  margin: 0;
+}
+
 .movieContainer .movies:hover .movie {
   -webkit-transform: translateX(-25%);
           transform: translateX(-25%);
@@ -396,27 +401,32 @@ body {
   overflow-x: scroll;
 }
 
+.movieContainer .movies::-webkit-scrollbar {
+  display: none;
+  /* for Chrome, Safari, and Opera */
+}
+
 .movieContainer .movies .movie:hover {
   -webkit-transform: scale(1.5) !important;
           transform: scale(1.5) !important;
-  -webkit-transition: -webkit-transform 300ms ease 100ms;
-  transition: -webkit-transform 300ms ease 100ms;
-  transition: transform 300ms ease 100ms;
-  transition: transform 300ms ease 100ms, -webkit-transform 300ms ease 100ms;
+  -webkit-transition: -webkit-transform 300ms ease 200ms;
+  transition: -webkit-transform 300ms ease 200ms;
+  transition: transform 300ms ease 200ms;
+  transition: transform 300ms ease 200ms, -webkit-transform 300ms ease 200ms;
 }
 
 .movieContainer .movies .movie:hover ~ .movie {
   -webkit-transform: translateX(25%);
           transform: translateX(25%);
-  -webkit-transition: -webkit-transform 300ms ease 100ms;
-  transition: -webkit-transform 300ms ease 100ms;
-  transition: transform 300ms ease 100ms;
-  transition: transform 300ms ease 100ms, -webkit-transform 300ms ease 100ms;
+  -webkit-transition: -webkit-transform 300ms ease 200ms;
+  transition: -webkit-transform 300ms ease 200ms;
+  transition: transform 300ms ease 200ms;
+  transition: transform 300ms ease 200ms, -webkit-transform 300ms ease 200ms;
 }
 
 .movieContainer .movies .movie img {
   height: auto;
-  width: 35vw;
+  width: 16vw;
   border-radius: 2px;
   margin: 5px;
 }

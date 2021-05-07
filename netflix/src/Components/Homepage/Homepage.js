@@ -1,9 +1,8 @@
-// import './App.css';
 import React from 'react';
 import Navbar from '../Navbar/Navbar';
 import Footer from '../Footer/Footer';
 import Banner from '../Banner/Banner'; 
-import MovieInfo from '../MovieInfo/MovieInfo'
+import Axios from '../Axios/Axios';
 // import Banner_player from "../Banner/Banner_player";
 
 const Homepage = () => {
@@ -13,6 +12,12 @@ const Homepage = () => {
             <Banner />
             {/* <Banner_player /> */}
             {/* <MovieInfo /> */}
+            <Axios genre='discover/80' title="80's "/>
+            <Axios genre='discover/90' title="90's "/>
+            <Axios genre='discover/00' title="00's "/>
+            <Axios genre='disney' title='Disney'/>
+
+
             <Footer />
         </div>
     )
