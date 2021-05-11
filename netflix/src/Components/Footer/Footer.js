@@ -11,8 +11,6 @@ const [buttonText, setButtonText] = useState("Servicecode");
 
 const changeText = (text) => setButtonText(text);
 
-    
-
   return (
     <footer>
     <div className="top-level">
