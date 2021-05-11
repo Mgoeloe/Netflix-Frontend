@@ -45,6 +45,7 @@ const Axios = ({genre, title}) => {
     return (
         <div className='movieContainer'>
            <h2>{title}</h2>
+           
            <button className='BtnLeft' onClick={() => scroll(-200)}><LeftIcon/></button>
            <button className='BtnRight' onClick={() => scroll(200)}><RightIcon/></button>
 

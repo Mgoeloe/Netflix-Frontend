@@ -6,36 +6,32 @@ body{
 
 .movieContainer {
     width: 90%;
-    height: 100%;
+    height: auto;
     margin: auto;
     margin-top: 4%;
     h2 {
         color: white;
         margin: 0;
+        margin-bottom: -9.5%;
     }
-
     button {
-   
-
-        background-color: rgba(0, 0, 0, 0.418);
+       
         color: white;
-  
         border: none;
         white-space: nowrap;
-  
+        height: 18.5vh;
+        width: auto;
         &:hover {
             background-color: #ffffff94;
         }
-
     }
 
     .BtnLeft{
         position: relative;
+        background-color: rgba(0, 0, 0, 0.418);
         z-index: 20;
-        top: 6.5vh;
+        top: 18.5vh;
         right: 0%;
-
-               
     }
 
     .BtnRight{
@@ -45,6 +41,7 @@ body{
         left: 92%;
 
     }
+
 
     .movies:hover .movie {
         transform: translateX(-25%);
@@ -86,4 +83,5 @@ body{
         }
     }
 }
+
 
