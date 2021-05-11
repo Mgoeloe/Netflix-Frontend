@@ -1,5 +1,8 @@
 import React, { useRef, useState, useEffect } from 'react';
 import axios from 'axios';
+import LeftIcon from '@material-ui/icons/KeyboardArrowLeft';
+import RightIcon from '@material-ui/icons/KeyboardArrowRight';
+
 
 import "../../Styles/style.css";
 
@@ -42,8 +45,8 @@ const Axios = ({genre, title}) => {
     return (
         <div className='movieContainer'>
            <h2>{title}</h2>
-           <button onClick={() => scroll(-200)}>LEFT</button>
-           <button onClick={() => scroll(200)}>RIGHT</button>
+           <button className='BtnLeft' onClick={() => scroll(-200)}><LeftIcon/></button>
+           <button className='BtnRight' onClick={() => scroll(200)}><RightIcon/></button>
 
             <div className='movies' ref={ref}>
                

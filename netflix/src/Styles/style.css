@@ -376,6 +376,31 @@ body {
   margin: 0;
 }
 
+.movieContainer button {
+  background-color: rgba(0, 0, 0, 0.418);
+  color: white;
+  border: none;
+  white-space: nowrap;
+}
+
+.movieContainer button:hover {
+  background-color: #ffffff94;
+}
+
+.movieContainer .BtnLeft {
+  position: relative;
+  z-index: 20;
+  top: 6.5vh;
+  right: 0%;
+}
+
+.movieContainer .BtnRight {
+  position: relative;
+  z-index: 20;
+  top: 6.5vh;
+  left: 92%;
+}
+
 .movieContainer .movies:hover .movie {
   -webkit-transform: translateX(-25%);
           transform: translateX(-25%);
@@ -579,4 +604,3 @@ body {
   background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(90%, black));
   background-image: linear-gradient(transparent, black 90%);
 }
-/*# sourceMappingURL=style.css.map */

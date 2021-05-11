@@ -3,6 +3,7 @@ body{
     
 }
 
+
 .movieContainer {
     width: 90%;
     height: 100%;
@@ -11,6 +12,38 @@ body{
     h2 {
         color: white;
         margin: 0;
+    }
+
+    button {
+   
+
+        background-color: rgba(0, 0, 0, 0.418);
+        color: white;
+  
+        border: none;
+        white-space: nowrap;
+  
+        &:hover {
+            background-color: #ffffff94;
+        }
+
+    }
+
+    .BtnLeft{
+        position: relative;
+        z-index: 20;
+        top: 6.5vh;
+        right: 0%;
+
+               
+    }
+
+    .BtnRight{
+        position: relative;
+        z-index: 20;
+        top: 6.5vh;
+        left: 92%;
+
     }
 
     .movies:hover .movie {
