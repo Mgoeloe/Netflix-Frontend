@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import axios from 'axios';
 
 import "../../Styles/style.css";
@@ -15,6 +15,10 @@ const Axios = ({genre, title}) => {
 
     const DISCOVER_REST_API_URL = `http://localhost:8080/api/movies/${genre}`;
 
+    const ref = useRef(null);
+    const scroll = (scrollOffset) => {
+        ref.current.scrollLeft += scrollOffset;
+      };
 
     useEffect(() => {
         const fetchData = (async () => {
@@ -38,7 +42,10 @@ const Axios = ({genre, title}) => {
     return (
         <div className='movieContainer'>
            <h2>{title}</h2>
-            <div className='movies' >
+           <button onClick={() => scroll(-200)}>LEFT</button>
+           <button onClick={() => scroll(200)}>RIGHT</button>
+
+            <div className='movies' ref={ref}>
                
                 {movies.map((movie, index) => (
                     <div className='movie' key={index}>
