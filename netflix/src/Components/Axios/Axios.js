@@ -45,10 +45,10 @@ const Axios = ({genre, title}) => {
     return (
         <div className='movieContainer'>
            <h2>{title}</h2>
-           
+           <div className='BtnContainer'>
            <button className='BtnLeft' onClick={() => scroll(-200)}><LeftIcon/></button>
            <button className='BtnRight' onClick={() => scroll(200)}><RightIcon/></button>
-
+           </div>
             <div className='movies' ref={ref}>
                
                 {movies.map((movie, index) => (
