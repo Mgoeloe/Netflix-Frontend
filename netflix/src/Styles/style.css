@@ -199,7 +199,7 @@
   transition: opacity 400ms ease 0ms;
 }
 
-@media screen and (min-width: 400px) and (max-width: 830px) {
+@media screen and (max-width: 600px) {
   .banner .banner__contents {
     top: 75px;
   }
@@ -215,13 +215,13 @@
   width: 40%;
 }
 
-@media screen and (min-width: 400px) and (max-width: 830px) {
+@media screen and (max-width: 600px) {
   .banner .banner__contents p {
     width: 65%;
   }
 }
 
-@media screen and (min-width: 400px) and (max-width: 830px) and (min-width: 400px) and (max-width: 830px) {
+@media screen and (max-width: 600px) and (max-width: 600px) {
   .banner .banner__contents p {
     display: none;
   }
@@ -261,7 +261,7 @@
   background-color: #ffffff94;
 }
 
-@media screen and (min-width: 400px) and (max-width: 830px) {
+@media screen and (max-width: 600px) {
   .banner .banner__buttons button {
     margin-top: 1vh;
     width: 11vw;
@@ -278,7 +278,7 @@
   color: white;
 }
 
-@media screen and (min-width: 400px) and (max-width: 830px) {
+@media screen and (max-width: 600px) {
   .banner .banner__buttons .dark {
     font-size: 1.7vw;
     width: 16vw;
@@ -291,7 +291,7 @@
   margin-right: 5%;
 }
 
-@media screen and (min-width: 400px) and (max-width: 830px) {
+@media screen and (max-width: 600px) {
   .banner .banner__buttons .IconBanner {
     font-size: 2.5vw;
     margin-right: 8%;
@@ -321,7 +321,7 @@
           transform: rotate(90deg) scaleX(-1);
 }
 
-@media screen and (min-width: 400px) and (max-width: 830px) {
+@media screen and (max-width: 600px) {
   .banner .banner__extra .banner__replay {
     font-size: 4vw;
   }
@@ -484,7 +484,7 @@ body {
 
 .movieInfo .movieInfo_content {
   position: absolute;
-  top: 22%;
+  top: 25%;
   left: 50%;
   -webkit-transform: translate(-50%, -20%);
           transform: translate(-50%, -20%);
@@ -559,8 +559,31 @@ body {
 }
 
 .movieInfo .movieInfo_content .info_box .info p {
-  font-size: 1.5rem;
   color: white;
+}
+
+@media screen and (max-width: 600px) {
+  .movieInfo .movieInfo_content .info_box .info p {
+    font-size: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .movieInfo .movieInfo_content .info_box .info p {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .movieInfo .movieInfo_content .info_box .info p {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .movieInfo .movieInfo_content .info_box .info p {
+    font-size: 1.4rem;
+  }
 }
 
 .movieInfo .movieInfo_content .info_box .info p span {
@@ -577,11 +600,38 @@ body {
   margin-left: 5%;
   width: 35%;
   color: white;
-  font-size: 1.2rem;
 }
 
 .movieInfo .movieInfo_content .info_box .extra span {
   color: grey;
+}
+
+.movieInfo .movieInfo_content .info_box .extra P {
+  color: white;
+}
+
+@media screen and (max-width: 600px) {
+  .movieInfo .movieInfo_content .info_box .extra P {
+    font-size: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .movieInfo .movieInfo_content .info_box .extra P {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .movieInfo .movieInfo_content .info_box .extra P {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .movieInfo .movieInfo_content .info_box .extra P {
+    font-size: 1.2rem;
+  }
 }
 
 .movieInfo .movieInfo_content .movieInfo-player {

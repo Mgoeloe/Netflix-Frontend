@@ -46,8 +46,8 @@ const Axios = ({genre, title}) => {
         <div className='movieContainer'>
            <h2>{title}</h2>
            <div className='BtnContainer'>
-           <button className='BtnLeft' onClick={() => scroll(-200)}><LeftIcon/></button>
-           <button className='BtnRight' onClick={() => scroll(200)}><RightIcon/></button>
+           <button onClick={() => scroll(-200)}><LeftIcon/></button>
+           <button onClick={() => scroll(200)}><RightIcon/></button>
            </div>
             <div className='movies' ref={ref}>
                
