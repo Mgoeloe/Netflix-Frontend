@@ -187,6 +187,13 @@
   overflow: none;
 }
 
+.banner .closePopup {
+  position: relative;
+  top: -51.5vw;
+  left: 72.5vw;
+  z-index: 99;
+}
+
 .banner .banner__contents {
   position: absolute;
   top: -10px;
@@ -478,10 +485,6 @@ body {
   height: 50%;
 }
 
-.movieInfo {
-  background-color: #161515;
-}
-
 .movieInfo .movieInfo_content {
   position: absolute;
   top: 25%;
@@ -534,7 +537,7 @@ body {
 }
 
 .movieInfo .movieInfo_content .personal .personal_button {
-  font-size: 1.5vw;
+  font-size: 1vw;
   color: white;
   margin: 0 0.4rem;
   padding: 0 0.4rem;
@@ -544,7 +547,7 @@ body {
 }
 
 .movieInfo .movieInfo_content .personal .personal_button:hover {
-  background-color: #36333344;
+  background-color: #c3baba9b;
 }
 
 .movieInfo .movieInfo_content .info_box {

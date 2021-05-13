@@ -48,16 +48,17 @@ const Axios = ({genre, title}) => {
            <div className='BtnContainer'>
            <button onClick={() => scroll(-200)}><LeftIcon/></button>
            <button onClick={() => scroll(200)}><RightIcon/></button>
-           </div>
+          </div>
             <div className='movies' ref={ref}>
-               
+     
                 {movies.map((movie, index) => (
                     <div className='movie' key={index}>
                         <img src={`https://image.tmdb.org/t/p/w500/${movie.backdrop_path}`} />
                     </div>
+                        
                 ))}
+                 </div>
             </div>
-        </div>
     )
 }
 
