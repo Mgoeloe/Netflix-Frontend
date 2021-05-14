@@ -2,6 +2,26 @@ body{
     background-color: black;
     
 }
+.BtnContainer{
+    // position: relative;
+    display: flex;
+    // // justify-content: space-between;
+    // top: 9.3vw;
+    // z-index: 20;
+    // width: 100%;
+    // height: auto;
+    button{
+        background-color: rgba(0, 0, 0, 0.418);
+        color: white;
+         border: none;
+         height: 9vw;
+         margin-top: 5.6vw;
+         width: 5vw;
+    &:hover {
+   background-color: #ffffff94;
+             }
+       
+    }
 
 
 .movieContainer {
@@ -9,28 +29,10 @@ body{
     height: auto;
     margin: auto;
     margin-top: 4%;
-    .BtnContainer{
-        position: relative;
-        display: flex;
-        justify-content: space-between;
-        top: 9.3vw;
-        z-index: 20;
-        width: 100%;
-        height: auto;
-        button{
-            background-color: rgba(0, 0, 0, 0.418);
-            color: white;
-             border: none;
-             height: 9.1vw;
-        &:hover {
-       background-color: #ffffff94;
-                 }
-        }
-    }
     h2 {
         color: white;
         margin: 0;
-        margin-bottom: -10%;
+        // margin-bottom: -10%;
     }
 
     .movies:hover .movie {
@@ -74,5 +76,7 @@ body{
         }
     }
 }
+}
+
 
 
