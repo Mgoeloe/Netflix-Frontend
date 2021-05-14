@@ -16,6 +16,7 @@ const Homepage = () => {
             <Axios genre='discover/90' title="90's "/>
             <Axios genre='discover/00' title="00's "/>
             <Axios genre='disney' title='Disney'/>
+            <Axios genre='will-smith' title='Will-Smith'/>
 
 
             <Footer />
