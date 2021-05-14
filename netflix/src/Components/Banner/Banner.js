@@ -60,8 +60,7 @@ const Banner = () => {
           <div className='Popup'>
             <MovieInfo />  
             <button className="dark closePopup" onClick={toggle}>
-              <InfoOutlined className="IconBanner" />
-              Close
+              x
             </button>
           </div> : null}
       </div>

@@ -187,6 +187,13 @@
   overflow: none;
 }
 
+.banner .closePopup {
+  position: relative;
+  top: -51.5vw;
+  left: 72.5vw;
+  z-index: 99;
+}
+
 .banner .banner__contents {
   position: absolute;
   top: -10px;
@@ -199,7 +206,7 @@
   transition: opacity 400ms ease 0ms;
 }
 
-@media screen and (min-width: 400px) and (max-width: 830px) {
+@media screen and (max-width: 600px) {
   .banner .banner__contents {
     top: 75px;
   }
@@ -215,13 +222,13 @@
   width: 40%;
 }
 
-@media screen and (min-width: 400px) and (max-width: 830px) {
+@media screen and (max-width: 600px) {
   .banner .banner__contents p {
     width: 65%;
   }
 }
 
-@media screen and (min-width: 400px) and (max-width: 830px) and (min-width: 400px) and (max-width: 830px) {
+@media screen and (max-width: 600px) and (max-width: 600px) {
   .banner .banner__contents p {
     display: none;
   }
@@ -261,7 +268,7 @@
   background-color: #ffffff94;
 }
 
-@media screen and (min-width: 400px) and (max-width: 830px) {
+@media screen and (max-width: 600px) {
   .banner .banner__buttons button {
     margin-top: 1vh;
     width: 11vw;
@@ -278,7 +285,7 @@
   color: white;
 }
 
-@media screen and (min-width: 400px) and (max-width: 830px) {
+@media screen and (max-width: 600px) {
   .banner .banner__buttons .dark {
     font-size: 1.7vw;
     width: 16vw;
@@ -291,7 +298,7 @@
   margin-right: 5%;
 }
 
-@media screen and (min-width: 400px) and (max-width: 830px) {
+@media screen and (max-width: 600px) {
   .banner .banner__buttons .IconBanner {
     font-size: 2.5vw;
     margin-right: 8%;
@@ -321,7 +328,7 @@
           transform: rotate(90deg) scaleX(-1);
 }
 
-@media screen and (min-width: 400px) and (max-width: 830px) {
+@media screen and (max-width: 600px) {
   .banner .banner__extra .banner__replay {
     font-size: 4vw;
   }
@@ -366,39 +373,40 @@ body {
 
 .movieContainer {
   width: 90%;
-  height: 100%;
+  height: auto;
   margin: auto;
   margin-top: 4%;
+}
+
+.movieContainer .BtnContainer {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  top: 9.3vw;
+  z-index: 20;
+  width: 100%;
+  height: auto;
+}
+
+.movieContainer .BtnContainer button {
+  background-color: rgba(0, 0, 0, 0.418);
+  color: white;
+  border: none;
+  height: 9.1vw;
+}
+
+.movieContainer .BtnContainer button:hover {
+  background-color: #ffffff94;
 }
 
 .movieContainer h2 {
   color: white;
   margin: 0;
-}
-
-.movieContainer button {
-  background-color: rgba(0, 0, 0, 0.418);
-  color: white;
-  border: none;
-  white-space: nowrap;
-}
-
-.movieContainer button:hover {
-  background-color: #ffffff94;
-}
-
-.movieContainer .BtnLeft {
-  position: relative;
-  z-index: 20;
-  top: 6.5vh;
-  right: 0%;
-}
-
-.movieContainer .BtnRight {
-  position: relative;
-  z-index: 20;
-  top: 6.5vh;
-  left: 92%;
+  margin-bottom: -10%;
 }
 
 .movieContainer .movies:hover .movie {
@@ -423,7 +431,8 @@ body {
       -ms-flex-pack: center space-around;
           justify-content: center space-around;
   overflow: hidden;
-  overflow-x: scroll;
+  overflow-x: auto;
+  scroll-behavior: smooth;
 }
 
 .movieContainer .movies::-webkit-scrollbar {
@@ -476,13 +485,9 @@ body {
   height: 50%;
 }
 
-.movieInfo {
-  background-color: #161515;
-}
-
 .movieInfo .movieInfo_content {
   position: absolute;
-  top: 22%;
+  top: 25%;
   left: 50%;
   -webkit-transform: translate(-50%, -20%);
           transform: translate(-50%, -20%);
@@ -532,7 +537,7 @@ body {
 }
 
 .movieInfo .movieInfo_content .personal .personal_button {
-  font-size: 1.5vw;
+  font-size: 1vw;
   color: white;
   margin: 0 0.4rem;
   padding: 0 0.4rem;
@@ -542,7 +547,7 @@ body {
 }
 
 .movieInfo .movieInfo_content .personal .personal_button:hover {
-  background-color: #36333344;
+  background-color: #c3baba9b;
 }
 
 .movieInfo .movieInfo_content .info_box {
@@ -557,8 +562,31 @@ body {
 }
 
 .movieInfo .movieInfo_content .info_box .info p {
-  font-size: 1.5rem;
   color: white;
+}
+
+@media screen and (max-width: 600px) {
+  .movieInfo .movieInfo_content .info_box .info p {
+    font-size: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .movieInfo .movieInfo_content .info_box .info p {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .movieInfo .movieInfo_content .info_box .info p {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .movieInfo .movieInfo_content .info_box .info p {
+    font-size: 1.4rem;
+  }
 }
 
 .movieInfo .movieInfo_content .info_box .info p span {
@@ -575,11 +603,38 @@ body {
   margin-left: 5%;
   width: 35%;
   color: white;
-  font-size: 1.2rem;
 }
 
 .movieInfo .movieInfo_content .info_box .extra span {
   color: grey;
+}
+
+.movieInfo .movieInfo_content .info_box .extra P {
+  color: white;
+}
+
+@media screen and (max-width: 600px) {
+  .movieInfo .movieInfo_content .info_box .extra P {
+    font-size: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .movieInfo .movieInfo_content .info_box .extra P {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .movieInfo .movieInfo_content .info_box .extra P {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .movieInfo .movieInfo_content .info_box .extra P {
+    font-size: 1.2rem;
+  }
 }
 
 .movieInfo .movieInfo_content .movieInfo-player {
@@ -604,3 +659,4 @@ body {
   background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(90%, black));
   background-image: linear-gradient(transparent, black 90%);
 }
+/*# sourceMappingURL=style.css.map */

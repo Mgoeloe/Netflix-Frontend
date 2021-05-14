@@ -8,9 +8,24 @@ import ThumbDown from '@material-ui/icons/ThumbDownAltRounded';
 import PlayArrow from "@material-ui/icons/PlayArrow";
 import AddRoundedIcon from '@material-ui/icons/AddRounded';
 
+const lists = [
+  { id: 1, icon: <AddRoundedIcon/>},
+  { id: 2, icon: <ThumbUpIcon />},
+  { id: 3, icon: <ThumbDown/>}
+];
+
 const MovieInfo = () => {
-    const [toggleState, setToggleState] = useState(null);
+    // const [toggleState, setToggleState] = useState(null);
     const [movieInfo, setMovieInfo] = useState(null);
+    const [selected, setSelected] = useState(0);
+    const [state, setState] = useState({
+      backgroundColor: "blue"
+    });
+
+    const handleColor = (row) => {
+      setSelected(row.id);
+    };
+
     const movieID = '603';
     const MOVIEINFO_REST_API_URL = `http://localhost:8080/api/movies/${movieID}`;
 
@@ -31,14 +46,16 @@ const MovieInfo = () => {
 
     }, [])
 
-   
+  
+  
 
-    const toggle = () => {
-      setToggleState(!toggleState);
-    }
+    // const toggle = () => {
+    //   setToggleState(!toggleState);
+    // }
 
 
     return (
+      <div className='movieInfoBg'>
         <div className='movieInfo'>
           <div className='movieInfo_content'>
              
@@ -48,15 +65,16 @@ const MovieInfo = () => {
             <PlayArrow />
             Play
           </button>
-          <span onClick={toggle} >
-              <AddRoundedIcon className="personal_button" />
+          {lists.map((list) => (
+          <span
+          key={list.id}
+          className='personal_button'
+          onClick={() => handleColor(list)}
+          style={{ backgroundColor: list.id === selected ? "#ff000080" : "black" }}>
+            {list.icon}
+            {/* <AddRoundedIcon /> */}
             </span>
-          <span onClick={toggle}>
-              <ThumbUpIcon className="personal_button" />
-            </span>
-            <span onClick={toggle}>
-              <ThumbDown className="personal_button" />
-            </span>
+             ))}
           </div>
             {movieInfo && (
                 <div className='info_box'>
@@ -72,6 +90,7 @@ const MovieInfo = () => {
                     </div>
             )}       
         </div>
+      </div>
       </div>
     )
 }

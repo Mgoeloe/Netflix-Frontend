@@ -45,18 +45,20 @@ const Axios = ({genre, title}) => {
     return (
         <div className='movieContainer'>
            <h2>{title}</h2>
-           <button className='BtnLeft' onClick={() => scroll(-200)}><LeftIcon/></button>
-           <button className='BtnRight' onClick={() => scroll(200)}><RightIcon/></button>
-
+           <div className='BtnContainer'>
+           <button onClick={() => scroll(-200)}><LeftIcon/></button>
+           <button onClick={() => scroll(200)}><RightIcon/></button>
+          </div>
             <div className='movies' ref={ref}>
-               
+     
                 {movies.map((movie, index) => (
                     <div className='movie' key={index}>
                         <img src={`https://image.tmdb.org/t/p/w500/${movie.backdrop_path}`} />
                     </div>
+                        
                 ))}
+                 </div>
             </div>
-        </div>
     )
 }
 
