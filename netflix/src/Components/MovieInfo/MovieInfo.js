@@ -18,9 +18,12 @@ const MovieInfo = () => {
     // const [toggleState, setToggleState] = useState(null);
     const [movieInfo, setMovieInfo] = useState(null);
     const [selected, setSelected] = useState(0);
-    const [state, setState] = useState({
-      backgroundColor: "blue"
-    });
+    const [addButton, setAddbutton] = useState(null);
+
+    
+    // const clickAddButton = () => {
+    //   setAddButton(!addButton);
+    // }
 
     const handleColor = (row) => {
       setSelected(row.id);
@@ -47,7 +50,17 @@ const MovieInfo = () => {
     }, [])
 
   
-  
+    document.querySelectorAll('.personal_button').forEach(function (obj) {
+      obj.addEventListener('mousedown', function () {
+          this.style.backgroundColor = "white";
+          this.style.color = "black";
+      })
+      // obj.addEventListener('mouseup', function () {
+      //     this.style.backgroundColor = "black";
+      //     this.style.color = "white";
+
+      // })
+  });
 
     // const toggle = () => {
     //   setToggleState(!toggleState);
