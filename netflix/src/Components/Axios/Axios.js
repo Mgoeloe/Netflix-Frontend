@@ -2,8 +2,6 @@ import React, { useRef, useState, useEffect } from 'react';
 import axios from 'axios';
 import LeftIcon from '@material-ui/icons/KeyboardArrowLeft';
 import RightIcon from '@material-ui/icons/KeyboardArrowRight';
-
-
 import "../../Styles/style.css";
 
 
@@ -43,12 +41,13 @@ const Axios = ({genre, title}) => {
 
 
     return (
+        <div className='BtnContainer'>
+          
+        <button className='Btnleft' onClick={() => scroll(-200)}><LeftIcon/></button>
+     
         <div className='movieContainer'>
            <h2>{title}</h2>
-           <div className='BtnContainer'>
-           <button onClick={() => scroll(-200)}><LeftIcon/></button>
-           <button onClick={() => scroll(200)}><RightIcon/></button>
-          </div>
+          
             <div className='movies' ref={ref}>
      
                 {movies.map((movie, index) => (
@@ -57,7 +56,13 @@ const Axios = ({genre, title}) => {
                     </div>
                         
                 ))}
+                  
                  </div>
+           
+            </div>
+     
+            <button className="Btnright" onClick={() => scroll(200)}><RightIcon/></button>
+    
             </div>
     )
 }
