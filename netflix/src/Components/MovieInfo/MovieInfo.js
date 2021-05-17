@@ -60,6 +60,7 @@ const MovieInfo = () => {
           this.style.color = "white";
 
       })
+
   });
 
     // const toggle = () => {

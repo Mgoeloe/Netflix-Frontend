@@ -19,8 +19,6 @@ const Homepage = () => {
             {/* <Axios genre='will-smith' title='Will Smith'/> */}
             <Axios genre='tom-cruise' title='Tom cruise'/>
 
-
-
             <Footer />
         </div>
     )
