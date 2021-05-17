@@ -43,7 +43,7 @@ const Axios = ({genre, title}) => {
     return (
         <div className='BtnContainer'>
           
-        <button className='Btnleft' onClick={() => scroll(-200)}><LeftIcon/></button>
+        <button className='Btnleft' onClick={() => scroll(-600)}><LeftIcon/></button>
      
         <div className='movieContainer'>
            <h2>{title}</h2>
@@ -61,7 +61,7 @@ const Axios = ({genre, title}) => {
            
             </div>
      
-            <button className="Btnright" onClick={() => scroll(200)}><RightIcon/></button>
+            <button className="Btnright" onClick={() => scroll(600)}><RightIcon/></button>
     
             </div>
     )

@@ -55,11 +55,12 @@ const MovieInfo = () => {
           this.style.backgroundColor = "white";
           this.style.color = "black";
       })
-      // obj.addEventListener('mouseup', function () {
-      //     this.style.backgroundColor = "black";
-      //     this.style.color = "white";
+      obj.addEventListener('mouseup', function () {
+          this.style.backgroundColor = "black";
+          this.style.color = "white";
 
-      // })
+      })
+
   });
 
     // const toggle = () => {
