@@ -1,7 +1,6 @@
 
 .movieInfo {
   // background-color: rgb(22, 21, 21);
-
   .movieInfo_content {
     position: absolute;
     top: 25%;
@@ -11,47 +10,81 @@
     width: 50%;
     height: 90%;
     background-color: rgb(22, 21, 21);
-
-    .personal {
-      position: absolute;
-      top: 45%;
-      left: 3%;
-      display: flex;
+    .personal{
+      position: relative;
+      top: -6vh;
       max-width: 100%;
+      display: flex;
       flex-direction: row;
-      .personal_play {
+      button {
         background-color: #ffffff;
         display: flex;
         justify-items: center;
         align-items: center;
         width: 6vw;
-        padding: 0.25vw 5%;
+        height: 4vh;
         font-size: 0.9vw;
         font-weight: 600;
         border: none;
         border-radius: 5px;
-        margin-right: 1%;
+        margin-left: 4%;
         white-space: nowrap;
         box-shadow: 3px 3px 10px rgba(48, 53, 75, 0.205);
         &:hover {
-            background-color: #ffffff94;
-          }
+          background-color: #ffffff94;
         }
+        @include tablet {
+          margin-top: 1vh;
+          width: 10vw;
+          height: 2.5vh;
+          font-size: 1.5vw;
+        }
+        @include smallscreen {
+        margin-top: 1vh;
+        width: 10vw;
+        height: 2.8vh;
+        font-size: 1.5vw;
+        }
+      }
       .personal_button {
-        font-size: 1vw;
-        color: white;
-        margin: 0 0.4rem;
+        width: 1vw;
+        height: 3.8vh;
+        margin: 0 0.3rem;
         padding: 0 0.4rem;
         border: 1px solid white;
         border-radius: 50%;
-        height: 100%;
+        @include tablet {
+          width: 0.5vw;
+          height: 2.5vh;
+          margin: 0.9vh 0.2rem;
+        }
+        @include smallscreen {
+          width: 1.2vw;
+          height: 2.8vh;
+          margin: 0.7vh 0.2rem;
+        }
+        
+        .list {
+          color: white;
+          width: 1.5vw;
+          margin: 0.2vh -0.25vw;
+          z-index: 100;
+          @include tablet {
+            width: 1.5vw;
+            margin: -0.5vh -0.5vw;
+          }
+          @include smallscreen {
+            width: 2vw;
+            margin: -0.2vh -0.3vw;
+          }
+        }
         &:hover {
             background-color: #c3baba9b;
           }
-    }
-}
-
+        }
+      }
     .info_box {
+      margin-top: -5vh;
       display: flex;
       margin-left: 3%;
       .info {
@@ -59,21 +92,21 @@
         p {
           color: white;
           @include tablet {
-          font-size: 0.5rem;
+          font-size:1.2vh;
           }
-          @include smallscreen{
-            font-size: 0.8rem;
-          }
-          @include bigscreen{
-            font-size: 1.1rem;
-          }
-          @include largescreen{
-            font-size: 1.4rem;
+          @include smallscreen {
+            font-size: 1.6vh;
           }
    
           span {
             font-weight: bold;
             font-size: 1.5rem;
+            @include tablet {
+              font-size: 0.7rem;
+              }
+              @include smallscreen {
+               font-size: 1rem;
+              }
             &.green {
               color: green;
             }
@@ -93,18 +126,14 @@
           @include tablet {
             font-size: 0.5rem;
             }
-            @include smallscreen{
-              font-size: 0.7rem;
-            }
-            @include bigscreen{
-              font-size: 1rem;
-            }
-            @include largescreen{
-              font-size: 1.2rem;
-            }
+            @include smallscreen {
+              font-size: 0.75rem;
+             }
         }
       }
     }
+  }
+}
 
     //--movieInfo_player styling
     .movieInfo-player {
@@ -120,10 +149,10 @@
     .movieInfo-wrapimg {
       overflow: hidden;
       img {
-        width: 134%;
-        height: auto;
+   width: 134%;
+  // height: 80%;
         background-image: linear-gradient(transparent, rgb(0, 0, 0) 90%);
       }
     }
-  }
-}
+  
+

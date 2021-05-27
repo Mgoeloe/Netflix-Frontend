@@ -9,9 +9,9 @@ import PlayArrow from "@material-ui/icons/PlayArrow";
 import AddRoundedIcon from '@material-ui/icons/AddRounded';
 
 const lists = [
-  { id: 1, icon: <AddRoundedIcon/>},
-  { id: 2, icon: <ThumbUpIcon />},
-  { id: 3, icon: <ThumbDown/>}
+  { id: 1, icon: <AddRoundedIcon className="list"/>},
+  { id: 2, icon: <ThumbUpIcon className="list"/>},
+  { id: 3, icon: <ThumbDown className="list"/>}
 ];
 
 const MovieInfo = () => {
@@ -19,11 +19,6 @@ const MovieInfo = () => {
     const [movieInfo, setMovieInfo] = useState(null);
     const [selected, setSelected] = useState(0);
     const [addButton, setAddbutton] = useState(null);
-
-    
-    // const clickAddButton = () => {
-    //   setAddButton(!addButton);
-    // }
 
     const handleColor = (row) => {
       setSelected(row.id);
@@ -71,12 +66,11 @@ const MovieInfo = () => {
     return (
       <div className='movieInfoBg'>
         <div className='movieInfo'>
-          <div className='movieInfo_content'>
-             
+          <div className='movieInfo_content'> 
           <MovieInfoPlayer />
           <div className='personal'>
-          <button className="personal_play">
-            <PlayArrow />
+          <button>
+            <PlayArrow className="IconBanner"/>
             Play
           </button>
           {lists.map((list) => (

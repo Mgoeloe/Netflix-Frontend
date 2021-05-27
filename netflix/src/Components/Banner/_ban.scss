@@ -9,6 +9,9 @@
     top: -51.5vw;
     left: 72.5vw;
     z-index: 99;
+    @include tablet {
+      left: 70vw;
+    }
   }
   .banner__contents {
     position: absolute;

@@ -4,12 +4,14 @@ import { NavLink, Switch, Route, BrowserRouter as Router } from 'react-router-do
 
 import Moviepage from '../Moviepage/Moviepage';
 import Homepage from '../Homepage/Homepage';
+// import Search from '../Searchbar/Search'
 
 import Logo from "../../IMG/netflix-82871.png";
 import Avatar from "../../IMG/netflix-avatar.png";
 import SearchIcon from "@material-ui/icons/Search";
 import CardGiftcardIcon from "@material-ui/icons/CardGiftcard";
 import NotificationsIcon from "@material-ui/icons/Notifications";
+
 
 const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
@@ -35,9 +37,10 @@ const Navbar = () => {
                 {/* <a href=' ' >My List </a> */}
 
                 <div className="NavExtra">
-                    <a href=" ">
+                    <span>
+                      {/* <Search /> */}
                         <SearchIcon />
-                    </a>
+                    </span>
                     <a href=" ">Kids </a>
                     <a href=" ">DVD </a>
                     <a href=" ">

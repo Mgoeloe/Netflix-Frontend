@@ -28,8 +28,8 @@ const Axios = ({genre, title}) => {
             setMovies(response.data.results);
     
             // console.log(response.data.backdrop_path);
-            console.log(movies);
-            console.log(response.data);
+            // console.log(movies);
+            // console.log(response.data);
     
             // const movieImage = response.data.backdrop_path;
     
